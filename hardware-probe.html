@@ -35,29 +35,28 @@
   </div></nav>
 </header>
 <main>
-
-<section class="page-hero"><div class="container"><div class="page-kicker">IN DEVELOPMENT</div><h1>MultiEra Hardware Probe</h1><p>Read-only Analyse- und Diagnosewerkzeug für klassische Computersysteme.</p></div></section>
+<section class="page-hero"><div class="container"><div class="page-kicker">DOS 1.0 RELEASED · WINDOWS 3.11 IN DEVELOPMENT</div><h1>MultiEra Hardware Probe</h1><p>Read-only Hardware-Diagnose für klassische x86-Rechner: DOS 1.0 ist jetzt verfügbar.</p></div></section>
 <section class="container detail-layout program-intro">
   <div class="probe-console" aria-hidden="true"><div>CPU</div><div>RAM</div><div>BUS</div><div>PORTS</div><code>REPORT.TXT</code></div>
-  <div class="detail-copy"><span class="status blue">IN DEVELOPMENT</span><h2>Hardware erfassen, verstehen und dokumentieren — ohne das System selbst zu verändern.</h2><p>Hardware Probe ist für Inventarisierung, Diagnose und Lab-Dokumentation gedacht. Das Werkzeug liest Informationen und meldet Auffälligkeiten, führt aber keine automatischen Reparaturen aus.</p><div class="platform-meta"><span>DOS</span><span>Windows</span><span>READ-ONLY</span><span>TXT REPORTS</span></div></div>
+  <div class="detail-copy"><span class="status">DOS 1.0 RELEASED</span> <span class="status blue">WIN 3.11 IN DEVELOPMENT</span><h2>Hardware erkennen, dokumentieren und analysieren.</h2><p>MHProbe liest Hardware- und Firmwaredaten aus, ohne erkannte Geräte neu zu konfigurieren. Für die Dokumentation kann das Programm einen TXT-Bericht auf Datenträger schreiben.</p><div class="platform-meta"><span>MS-DOS</span><span>386+ / x86</span><span>READ-ONLY HARDWARE</span><span>FAT12 FLOPPY</span></div></div>
+</section>
+<section class="container page-grid two">
+  <article class="content-card release-card"><h2>DOS Edition 1.0 – herunterladen</h2><p><strong>Offizielle DOS-Version · Freeware · 2026</strong></p><p>Startfertiges 1,44-MB-Diskettenimage mit <code>MHPROBE.EXE</code>, Hardware-Datenbanken, README, Versionsverlauf und Lizenz.</p><p><a class="cta" href="/downloads/mhprobe/MHPROBE-1.0-DOS.zip">DOS 1.0 als ZIP herunterladen</a></p><p><a href="/downloads/mhprobe/MHPROBE-1.0-DOS.IMG">Original-Diskettenimage (.IMG, 1.440 KiB)</a></p><p class="platform-note">ZIP enthält das unveränderte IMG · ZIP: 65 KiB · README und Lizenz liegen im Diskettenimage.</p></article>
+  <article class="content-card"><h2>Windows 3.11 – Entwicklungsstand</h2><p>Die native Windows-3.11-Edition befindet sich in fortgeschrittener Entwicklung. Sie ist noch <strong>nicht öffentlich freigegeben</strong>.</p><p>Die DOS Edition 1.0 ist kein nativer Win16-Build. Weitere Windows-Versionen und Funktionen folgen erst nach Tests.</p><span class="status blue">IN DEVELOPMENT · NO DOWNLOAD</span></article>
 </section>
 <section class="container page-grid three">
-  <article class="content-card"><h2>Einsatz</h2><ul class="clean-list"><li>Bestandsaufnahme alter PCs</li><li>Dokumentation vor Umbauten oder Treiberarbeiten</li><li>Fehlersuche und Support</li><li>vergleichbare TXT-Berichte für das MultiEra Hardware Lab</li></ul></article>
-  <article class="content-card"><h2>Aktueller Entwicklungsstand</h2><p>Der DOS-Zweig befindet sich bereits in Entwicklung. Im aktuellen DEV-Stand werden u. a. CPU/CPUID-Daten und XMS-Speicherinformationen erkannt und Diagnosehinweise ausgegeben.</p><p class="platform-note">Interner Entwicklungszweig: DOS DEV 0.03.</p></article>
-  <article class="content-card"><h2>Zielplattformen</h2><div class="platform-meta"><span>DOS</span><span>Win 3.x–XP</span><span>später weitere Systeme</span></div><p>Der aktuelle Schwerpunkt liegt auf DOS und klassischen Windows-Systemen. Weitere Plattformen werden erst nach eigenen Tests als unterstützt geführt.</p></article>
+  <article class="content-card"><h2>CPU und Speicher</h2><ul class="clean-list"><li>386/486-Erkennung und CPUID, soweit verfügbar</li><li>FPU-Erkennung</li><li>konventioneller Speicher, XMS und HMA</li><li>BIOS-Signaturen und DMI/SMBIOS, falls vorhanden</li></ul></article>
+  <article class="content-card"><h2>Busse und Schnittstellen</h2><ul class="clean-list"><li>PCI-BIOS, Geräte-IDs, Klassen und IRQs</li><li>ISA / PnP-BIOS-Ressourcen, soweit unterstützt</li><li>IBM PS/2 Micro Channel / MCA und POS-Daten</li><li>COM, LPT und klassische PC-Hardware</li></ul></article>
+  <article class="content-card"><h2>Diagnose und Datenbanken</h2><ul class="clean-list"><li>Warnungen und Diagnosehinweise</li><li>MCA-, PCI-, CPU-, BIOS- und PnP-Datenbanken</li><li>lesbare Bildschirmseiten mit Pager</li><li>vollständiger <code>REPORT.TXT</code>-Bericht</li></ul></article>
 </section>
 <section class="container page-grid two">
-  <article class="content-card"><h2>Analysebereiche</h2><ul class="clean-list"><li>CPU und FPU</li><li>konventioneller, XMS-/Extended- und weiterer Systemspeicher</li><li>Mainboard- und Bussysteme</li><li>ISA, PCI, Micro Channel, NuBus/Zorro bei späteren Ports</li><li>Schnittstellen und angeschlossene Hardware</li><li>Fehler, Warnungen und erklärende Notices</li></ul></article>
-  <article class="content-card"><h2>Feste Sicherheitsregel</h2><p><strong>Hardware Probe bleibt ein Diagnosewerkzeug.</strong></p><ul class="clean-list"><li>keine automatischen Reparaturen</li><li>keine Registry-/INI-Änderungen</li><li>keine CONFIG.SYS-/AUTOEXEC.BAT-Änderungen</li><li>keine Treiberinstallation</li><li>keine BIOS-/CMOS-Änderungen</li></ul><span class="status gray">READ ONLY</span></article>
-</section>
-<section class="container page-grid two">
-  <article class="content-card"><h2>Berichte</h2><p>Die Ausgabe soll sowohl direkt lesbar als auch als TXT-Bericht speicherbar sein. Damit lassen sich reale Systeme dokumentieren und spätere Änderungen nachvollziehen.</p><ul class="clean-list"><li>Hardwareübersicht</li><li>Diagnosezusammenfassung</li><li>Errors / Warnings / Notices</li><li>Hinweise zur manuellen weiteren Prüfung</li></ul></article>
-  <article class="content-card release-card"><h2>Downloadstatus</h2><p><strong>Noch keine öffentliche Version.</strong></p><p>Entwicklungs-Builds werden erst veröffentlicht, wenn Erkennung und Berichte auf passenden Zielsystemen zuverlässig geprüft sind.</p><a class="cta" href="downloads.html">Zur Downloadübersicht ...</a></article>
+  <article class="content-card"><h2>Installation und Bedienung</h2><p>Diskettenimage auf eine 1,44-MB-Diskette schreiben oder das Image in einem Emulator einbinden. Alternativ die enthaltenen Dateien in einen DOS-Ordner kopieren; die <code>.DAT</code>-Dateien bleiben neben <code>MHPROBE.EXE</code>.</p><p>Im DOS-Verzeichnis <code>MHPROBE</code> starten. Menüpunkt <strong>9</strong> speichert <code>REPORT.TXT</code> im aktuellen Arbeitsverzeichnis. Für längere Bildschirmausgaben: Leertaste/Enter weiter, Esc zurück.</p></article>
+  <article class="content-card"><h2>Sicherheitsregel und Tests</h2><p><strong>Read-only für Hardware-Konfiguration:</strong> keine automatischen Reparaturen, kein Umschreiben von PCI-BARs, keine Änderungen an CMOS, PnP-Knoten oder MCA-Adaptern. Nur ein ausdrücklich angeforderter TXT-Bericht wird auf Datenträger geschrieben.</p><p>Der beigefügte Release-README dokumentiert Tests mit <strong>MS-DOS 6.22 im 86Box-IBM-PS/2-Model-70-Aufbau</strong> sowie in der <strong>Windows-98-DOS-Umgebung</strong>. Das ist keine pauschale Zusage für jedes Originalgerät.</p><p class="platform-note">SHA-256 des unveränderten IMG: <code style="overflow-wrap:anywhere">53c7f9b564b727f3bb23d1673530dbb96cc756f2a4199b81a671d43a0619fc0d</code></p></article>
 </section>
 <section class="container page-grid three program-related">
-  <a class="content-card" href="dos.html"><h2>DOS</h2><p>Aktuelle Entwicklungs- und Testplattform.</p><p class="platform-note">DOS-Seite öffnen →</p></a>
-  <a class="content-card" href="windows.html"><h2>Windows</h2><p>Geplante klassische Win16-/Win32-Abdeckung.</p><p class="platform-note">Windows-Seite öffnen →</p></a>
-  <a class="content-card" href="hardware-lab.html"><h2>Hardware Lab</h2><p>Reale Systeme, auf denen Diagnosen später dokumentiert werden.</p><p class="platform-note">Hardware Lab öffnen →</p></a>
+  <a class="content-card" href="dos.html"><h2>DOS</h2><p>DOS-Edition und klassische PC-Umgebung.</p><p class="platform-note">Zur DOS-Seite →</p></a>
+  <a class="content-card" href="windows.html"><h2>Windows</h2><p>Native Windows-3.11-Edition in Entwicklung.</p><p class="platform-note">Windows-Seite →</p></a>
+  <a class="content-card" href="downloads.html"><h2>Downloads</h2><p>Alle offiziellen Software-Veröffentlichungen.</p><p class="platform-note">Downloadübersicht →</p></a>
 </section>
 </main>
 <footer class="footer"><div class="container footer-inner">

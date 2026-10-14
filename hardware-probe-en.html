@@ -35,29 +35,28 @@
   </div></nav>
 </header>
 <main>
-
-<section class="page-hero"><div class="container"><div class="page-kicker">IN DEVELOPMENT</div><h1>MultiEra Hardware Probe</h1><p>Read-only analysis and diagnostic tool for classic computer systems.</p></div></section>
+<section class="page-hero"><div class="container"><div class="page-kicker">DOS 1.0 RELEASED · WINDOWS 3.11 IN DEVELOPMENT</div><h1>MultiEra Hardware Probe</h1><p>Read-only hardware diagnostics for classic x86 systems. DOS Edition 1.0 is available now.</p></div></section>
 <section class="container detail-layout program-intro">
   <div class="probe-console" aria-hidden="true"><div>CPU</div><div>RAM</div><div>BUS</div><div>PORTS</div><code>REPORT.TXT</code></div>
-  <div class="detail-copy"><span class="status blue">IN DEVELOPMENT</span><h2>Inventory, understand and document hardware — without modifying the system itself.</h2><p>Hardware Probe is designed for inventory, diagnostics and lab documentation. It reads information and reports anomalies, but never performs automatic repairs.</p><div class="platform-meta"><span>DOS</span><span>Windows</span><span>READ-ONLY</span><span>TXT REPORTS</span></div></div>
+  <div class="detail-copy"><span class="status">DOS 1.0 RELEASED</span> <span class="status blue">WIN 3.11 IN DEVELOPMENT</span><h2>Inspect, document and understand classic hardware.</h2><p>MHProbe reads hardware and firmware details without reconfiguring detected devices. For documentation, it can write a text report to disk.</p><div class="platform-meta"><span>MS-DOS</span><span>386+ / x86</span><span>READ-ONLY HARDWARE</span><span>FAT12 FLOPPY</span></div></div>
+</section>
+<section class="container page-grid two">
+  <article class="content-card release-card"><h2>DOS Edition 1.0 – download</h2><p><strong>Official DOS version · Freeware · 2026</strong></p><p>Ready-to-use 1.44 MB floppy image containing <code>MHPROBE.EXE</code>, hardware databases, README, change log and license.</p><p><a class="cta" href="/downloads/mhprobe/MHPROBE-1.0-DOS.zip">Download DOS 1.0 ZIP</a></p><p><a href="/downloads/mhprobe/MHPROBE-1.0-DOS.IMG">Original floppy image (.IMG, 1,440 KiB)</a></p><p class="platform-note">ZIP contains the unmodified IMG · ZIP: 65 KiB · README and license are inside the floppy image.</p></article>
+  <article class="content-card"><h2>Windows 3.11 – development</h2><p>The native Windows 3.11 edition is in advanced development, but is <strong>not publicly released</strong> yet.</p><p>DOS Edition 1.0 is not a native Win16 application. Further Windows releases will follow documented testing.</p><span class="status blue">IN DEVELOPMENT · NO DOWNLOAD</span></article>
 </section>
 <section class="container page-grid three">
-  <article class="content-card"><h2>Use cases</h2><ul class="clean-list"><li>inventory of vintage PCs</li><li>documentation before upgrades or driver work</li><li>troubleshooting and support</li><li>comparable TXT reports for the MultiEra Hardware Lab</li></ul></article>
-  <article class="content-card"><h2>Current development status</h2><p>The DOS branch is already under active development. The current DEV build detects CPU/CPUID information and XMS memory data and emits diagnostic notices.</p><p class="platform-note">Internal development track: DOS DEV 0.03.</p></article>
-  <article class="content-card"><h2>Target platforms</h2><div class="platform-meta"><span>DOS</span><span>Win 3.x–XP</span><span>more systems later</span></div><p>The current focus is DOS and classic Windows. Additional platforms will only be listed as supported after our own tests.</p></article>
+  <article class="content-card"><h2>CPU and memory</h2><ul class="clean-list"><li>386/486 detection and CPUID where supported</li><li>FPU identification</li><li>conventional memory, XMS and HMA</li><li>BIOS signatures and DMI/SMBIOS if available</li></ul></article>
+  <article class="content-card"><h2>Buses and interfaces</h2><ul class="clean-list"><li>PCI BIOS, device IDs, classes and IRQs</li><li>ISA / PnP BIOS resources where supported</li><li>IBM PS/2 Micro Channel / MCA and POS data</li><li>COM, LPT and classic PC hardware</li></ul></article>
+  <article class="content-card"><h2>Diagnostics and databases</h2><ul class="clean-list"><li>warnings and diagnostic notices</li><li>MCA, PCI, CPU, BIOS and PnP databases</li><li>paged on-screen output</li><li>complete <code>REPORT.TXT</code> report</li></ul></article>
 </section>
 <section class="container page-grid two">
-  <article class="content-card"><h2>Analysis areas</h2><ul class="clean-list"><li>CPU and FPU</li><li>conventional, XMS/extended and other system memory</li><li>motherboard and bus systems</li><li>ISA, PCI, Micro Channel, NuBus/Zorro in later ports</li><li>ports and attached hardware</li><li>errors, warnings and explanatory notices</li></ul></article>
-  <article class="content-card"><h2>Fixed safety rule</h2><p><strong>Hardware Probe remains a diagnostic tool.</strong></p><ul class="clean-list"><li>no automatic repairs</li><li>no Registry/INI changes</li><li>no CONFIG.SYS/AUTOEXEC.BAT changes</li><li>no driver installation</li><li>no BIOS/CMOS changes</li></ul><span class="status gray">READ ONLY</span></article>
-</section>
-<section class="container page-grid two">
-  <article class="content-card"><h2>Reports</h2><p>Output is intended to be readable on screen and saveable as TXT. This makes it possible to document real machines and compare later changes.</p><ul class="clean-list"><li>hardware overview</li><li>diagnostic summary</li><li>errors / warnings / notices</li><li>guidance for manual follow-up checks</li></ul></article>
-  <article class="content-card release-card"><h2>Download status</h2><p><strong>No public version yet.</strong></p><p>Development builds will only be released once detection and reports have been verified reliably on suitable target systems.</p><a class="cta" href="downloads-en.html">Open downloads ...</a></article>
+  <article class="content-card"><h2>Install and run</h2><p>Write the disk image to a 1.44 MB floppy or mount it in an emulator. Alternatively copy all included files into a DOS directory, keeping the <code>.DAT</code> databases next to <code>MHPROBE.EXE</code>.</p><p>Run <code>MHPROBE</code> in DOS. Menu option <strong>9</strong> writes <code>REPORT.TXT</code> to the current working directory. For long screens: Space/Enter to continue, Esc to return.</p></article>
+  <article class="content-card"><h2>Safety and testing</h2><p><strong>Read-only hardware configuration:</strong> no automatic repairs, PCI BAR writes, CMOS changes, PnP node changes or MCA reconfiguration. Only the explicitly requested TXT report is written to disk.</p><p>The included release README documents testing on <strong>MS-DOS 6.22 in an 86Box IBM PS/2 Model 70 setup</strong> and in a <strong>Windows 98 DOS environment</strong>. This does not guarantee operation on every physical machine.</p><p class="platform-note">SHA-256 of the unmodified IMG: <code style="overflow-wrap:anywhere">53c7f9b564b727f3bb23d1673530dbb96cc756f2a4199b81a671d43a0619fc0d</code></p></article>
 </section>
 <section class="container page-grid three program-related">
-  <a class="content-card" href="dos-en.html"><h2>DOS</h2><p>Current development and test platform.</p><p class="platform-note">Open DOS page →</p></a>
-  <a class="content-card" href="windows-en.html"><h2>Windows</h2><p>Planned classic Win16/Win32 coverage.</p><p class="platform-note">Open Windows page →</p></a>
-  <a class="content-card" href="hardware-lab-en.html"><h2>Hardware Lab</h2><p>Real systems where diagnostics can later be documented.</p><p class="platform-note">Open Hardware Lab →</p></a>
+  <a class="content-card" href="dos-en.html"><h2>DOS</h2><p>DOS Edition and classic PC environment.</p><p class="platform-note">Open DOS page →</p></a>
+  <a class="content-card" href="windows-en.html"><h2>Windows</h2><p>Native Windows 3.11 edition in development.</p><p class="platform-note">Open Windows page →</p></a>
+  <a class="content-card" href="downloads-en.html"><h2>Downloads</h2><p>All official software releases.</p><p class="platform-note">Open downloads →</p></a>
 </section>
 </main>
 <footer class="footer"><div class="container footer-inner">

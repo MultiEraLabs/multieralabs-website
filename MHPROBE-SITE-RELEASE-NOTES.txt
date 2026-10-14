@@ -1,0 +1,35 @@
+MULTIERA LABS - MHPROBE DOS 1.0 WEBSITE UPDATE
+2026-10-14
+
+Base: Cloudflare RC3, Modern v0.14, Legacy Retro v1.4, 8-Bit v0.6.
+Release content: MHPROBE-1.0-DOS.IMG (unchanged, 1,474,560 bytes)
+Original IMG SHA-256: 53c7f9b564b727f3bb23d1673530dbb96cc756f2a4199b81a671d43a0619fc0d
+ZIP wrapper: MHPROBE-1.0-DOS.zip (65,716 bytes).
+ZIP includes the unmodified IMG byte-for-byte, including README/CHANGES/LICENSE.
+
+Official release claims source: README.TXT and CHANGES.TXT on floppy disk image.
+Documented environments: IBM PS/2 Model 70 in 86Box with MS-DOS 6.22,
+Windows 98 DOS environment (no undocumented real-machine compatibility claims).
+
+Windows 3.11: separate native Win16 build under development, not released.
+Read-only pertains to hardware configuration; REPORT.TXT writes to disk on request.
+
+Modern DE/EN: homepage, projects, hardware-probe detail, downloads, DOS and Windows.
+Legacy DE/EN: homepage news, projects, download archive, DOS/Windows 3.x
+software list, new dedicated MHProbe project detail page.
+8-Bit DE/EN: projects mention and a brief ASCII MHProbe info page.
+
+DEPLOYMENT VIA GITHUB DESKTOP
+1. Clone/use repository MultiEraLabs/multieralabs-website, branch main.
+2. Extract the content of this ZIP INTO THE REPOSITORY ROOT; do not add an
+   enclosing folder, do not replace the existing GitHub README.md.
+3. Review Changes in GitHub Desktop; .gitignore excludes future .DS_Store.
+4. Commit: Release MHProbe DOS 1.0 - website and download.
+5. Push origin. Cloudflare Pages project multiera-labs-git deploys main.
+6. Test the published modern, legacy and 8-bit pages and ZIP/IMG download.
+
+CAUTION
+- This package was statically tested, not executed in DOS or live-tested
+  against Cloudflare. The user's documented DOS release is the source.
+- The project source is PUBLIC. Never copy signing keys or private configs.
+- Legacy HTTP accessibility on historical browsers is still unresolved.
