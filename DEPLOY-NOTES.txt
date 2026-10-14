@@ -1,0 +1,52 @@
+MultiEra Labs - Cloudflare Pages Release Candidate 1
+2026-10-12
+
+VERSIONEN
+Modern v0.14 (Hauptverzeichnis)
+Legacy Retro v1.4 (/legacy/)
+8-Bit v0.6 (/8bit/)
+
+Dieses ZIP ist als Cloudflare Pages Direct Upload verwendbar. Die ZIP-Wurzel
+enthaelt index.html; den Ordnerinhalt NICHT innerhalb eines zusaetzlichen
+Oberordners hochladen.
+
+SPRUENGLINKS
+/ -> Modern (DE)
+/index-en.html -> Modern (EN)
+/legacy/ -> Legacy Retro (DE)
+/legacy/legacy-en.html -> Legacy Retro (EN)
+/8bit/ -> 8-Bit DE/EN Auswahl
+/8bit/de/home.html -> 8-Bit DE
+/8bit/en/home.html -> 8-Bit EN
+
+AENDERUNGEN GEGENUEBER DEN FREIGEGEBENEN VERSIONS-ZIPS
+- Modern: nur interne Edition-Links von /legacy.html auf /legacy/
+  bzw. /legacy/legacy-en.html angepasst.
+- Legacy: alle 107 Original-Dateien unveraendert, nur Kopie der deutschen
+  legacy.html als /legacy/index.html ergaenzt.
+- 8-Bit: Dateien unveraendert in /8bit/ entpackt.
+- Teststatus: Original-Editionen vom Nutzer getestet; diese kombinierte
+  Hosting-Fassung noch NICHT live getestet.
+
+CLOUDFLARE PAGES (kostenloser Einstieg)
+1. Dashboard > Workers & Pages > Create application > Pages > Direct Upload
+   (Schaltflaechenbezeichnung kann abweichen).
+2. Projektnamen waehlen, etwa multiera-labs.
+3. Diese ZIP direkt per Drag & Drop hochladen.
+4. Live unter https://<projektname>.pages.dev/ testen.
+5. Domain multieralabs.de spaeter bei externem Registrar registrieren
+   und als Custom Domain hinzufuegen.
+
+WICHTIG: Ein Direct-Upload-Pages-Projekt kann nicht nachtraeglich auf
+Git-Integration umgestellt werden. Spaeter neues Git-verbundenes
+Pages-Projekt anlegen, falls noetig.
+
+RETRO-HTTP-HINWEIS
+HTTPS ist auf Cloudflare Pages verfuegbar. Ob Plain-HTTP ohne erzwungene
+HTTPS-Weiterleitung auf der kuenftigen eigenen Domain fuer Netscape 3.x,
+Contiki usw. funktioniert, ist noch zu pruefen. Nicht davon ausgehen,
+dass die pages.dev Adresse in diesen Browsern funktioniert. Die Legacy-/
+8-Bit-Seiten koennen bei Bedarf separat ueber einen getesteten HTTP-Host
+bereitgestellt werden. G15Control Downloads/Updatefeeds nur HTTPS.
+
+Keine Fake-Downloads, kein G15Control-Updatefeed, keine Domain-Registrierung.

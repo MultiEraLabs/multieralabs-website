@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img">
+<rect width="320" height="180" fill="#008080"/>
+<rect x="7" y="8" width="306" height="164" fill="#c0c0c0" stroke="#fff" stroke-width="2"/>
+<rect x="10" y="11" width="300" height="18" fill="#1d5d8d"/>
+<text x="16" y="24" font-family="Tahoma,Arial" font-size="10" font-weight="bold" fill="#fff">Netscape 4.x - MultiEra Labs</text>
+<rect x="270" y="14" width="11" height="11" fill="#c0c0c0" stroke="#fff"/><rect x="284" y="14" width="11" height="11" fill="#c0c0c0" stroke="#fff"/><rect x="298" y="14" width="9" height="11" fill="#c0c0c0" stroke="#fff"/>
+<text x="14" y="42" font-family="Tahoma,Arial" font-size="9" fill="#111">File  Edit  View  Go  Favorites  Help</text>
+<rect x="11" y="47" width="298" height="21" fill="#d4d0c8" stroke="#808080"/>
+<rect x="18" y="52" width="30" height="12" fill="#e4e4e4" stroke="#888"/><text x="22" y="61" font-family="Tahoma,Arial" font-size="7">Back</text>
+<rect x="54" y="52" width="30" height="12" fill="#e4e4e4" stroke="#888"/><text x="59" y="61" font-family="Tahoma,Arial" font-size="7">Stop</text>
+<rect x="91" y="52" width="208" height="12" fill="#fff" stroke="#777"/><text x="96" y="61" font-family="Courier New,monospace" font-size="7">http://multiera.local/</text>
+<rect x="11" y="71" width="298" height="83" fill="#fff" stroke="#808080"/>
+<rect x="18" y="78" width="284" height="20" fill="#062d4a"/><text x="25" y="92" font-family="Arial" font-size="13" font-weight="bold" fill="#fff">MultiEra <tspan fill="#ff8a00">Labs</tspan></text>
+<text x="25" y="109" font-family="Arial" font-size="9" fill="#222">Software across generations.</text>
+<text x="25" y="124" font-family="Arial" font-size="8" fill="#003399">Projects | Platforms | Hardware Lab | Browser Lab</text>
+<line x1="25" y1="132" x2="290" y2="132" stroke="#bbb"/>
+<text x="25" y="145" font-family="Arial" font-size="8" fill="#333">Legacy compatibility test: PASS</text>
+<rect x="11" y="157" width="298" height="12" fill="#d4d0c8" stroke="#808080"/><text x="16" y="166" font-family="Tahoma,Arial" font-size="7" fill="#111">Windows 98 · Netscape 4.x · PASS</text>
+</svg>

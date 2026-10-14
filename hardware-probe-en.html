@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MultiEra Hardware Probe — MultiEra Labs</title>
+<meta name="description" content="MultiEra Hardware Probe — read-only diagnostics and hardware inventory for DOS and classic systems.">
+<link rel="stylesheet" href="styles.css?v=0.14">
+</head>
+<body class="program-detail">
+<header class="topbar">
+  <div class="container brand-row">
+    <a class="brand" href="index-en.html" aria-label="MultiEra Labs">
+      <span class="logo-orbit"><i></i><b></b></span>
+      <span class="brand-copy"><strong>MultiEra <span>Labs</span></strong><small>Software across generations.</small></span>
+    </a>
+    <div></div>
+    <div class="lang-search">
+      <div class="lang">
+        <a class="" href="hardware-probe.html">DE</a>&nbsp;|&nbsp;<a class="active" href="hardware-probe-en.html">EN</a>
+      </div>
+      <div class="search"><input id="site-search" type="search" placeholder="Search ..." aria-label="Search ..."><button id="search-button" aria-label="Search">⌕</button></div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <nav class="nav"><div class="container nav-inner">
+<a href="index-en.html"><span class="ico">⌂</span>Home</a>
+<a class="active" href="projects-en.html"><span class="ico">⚙</span>Projects</a>
+<a href="platforms-en.html"><span class="ico">▱</span>Platforms</a>
+<a href="hardware-lab-en.html"><span class="ico">▣</span>Hardware Lab</a>
+<a href="browser-lab-en.html"><span class="ico">◎</span>Browser Lab</a>
+<a href="downloads-en.html"><span class="ico">⇩</span>Downloads</a>
+<a href="roadmap-en.html"><span class="ico">☷</span>Roadmap</a>
+<a href="about-en.html"><span class="ico">ⓘ</span>About</a>
+  </div></nav>
+</header>
+<main>
+
+<section class="page-hero"><div class="container"><div class="page-kicker">IN DEVELOPMENT</div><h1>MultiEra Hardware Probe</h1><p>Read-only analysis and diagnostic tool for classic computer systems.</p></div></section>
+<section class="container detail-layout program-intro">
+  <div class="probe-console" aria-hidden="true"><div>CPU</div><div>RAM</div><div>BUS</div><div>PORTS</div><code>REPORT.TXT</code></div>
+  <div class="detail-copy"><span class="status blue">IN DEVELOPMENT</span><h2>Inventory, understand and document hardware — without modifying the system itself.</h2><p>Hardware Probe is designed for inventory, diagnostics and lab documentation. It reads information and reports anomalies, but never performs automatic repairs.</p><div class="platform-meta"><span>DOS</span><span>Windows</span><span>READ-ONLY</span><span>TXT REPORTS</span></div></div>
+</section>
+<section class="container page-grid three">
+  <article class="content-card"><h2>Use cases</h2><ul class="clean-list"><li>inventory of vintage PCs</li><li>documentation before upgrades or driver work</li><li>troubleshooting and support</li><li>comparable TXT reports for the MultiEra Hardware Lab</li></ul></article>
+  <article class="content-card"><h2>Current development status</h2><p>The DOS branch is already under active development. The current DEV build detects CPU/CPUID information and XMS memory data and emits diagnostic notices.</p><p class="platform-note">Internal development track: DOS DEV 0.03.</p></article>
+  <article class="content-card"><h2>Target platforms</h2><div class="platform-meta"><span>DOS</span><span>Win 3.x–XP</span><span>more systems later</span></div><p>The current focus is DOS and classic Windows. Additional platforms will only be listed as supported after our own tests.</p></article>
+</section>
+<section class="container page-grid two">
+  <article class="content-card"><h2>Analysis areas</h2><ul class="clean-list"><li>CPU and FPU</li><li>conventional, XMS/extended and other system memory</li><li>motherboard and bus systems</li><li>ISA, PCI, Micro Channel, NuBus/Zorro in later ports</li><li>ports and attached hardware</li><li>errors, warnings and explanatory notices</li></ul></article>
+  <article class="content-card"><h2>Fixed safety rule</h2><p><strong>Hardware Probe remains a diagnostic tool.</strong></p><ul class="clean-list"><li>no automatic repairs</li><li>no Registry/INI changes</li><li>no CONFIG.SYS/AUTOEXEC.BAT changes</li><li>no driver installation</li><li>no BIOS/CMOS changes</li></ul><span class="status gray">READ ONLY</span></article>
+</section>
+<section class="container page-grid two">
+  <article class="content-card"><h2>Reports</h2><p>Output is intended to be readable on screen and saveable as TXT. This makes it possible to document real machines and compare later changes.</p><ul class="clean-list"><li>hardware overview</li><li>diagnostic summary</li><li>errors / warnings / notices</li><li>guidance for manual follow-up checks</li></ul></article>
+  <article class="content-card release-card"><h2>Download status</h2><p><strong>No public version yet.</strong></p><p>Development builds will only be released once detection and reports have been verified reliably on suitable target systems.</p><a class="cta" href="downloads-en.html">Open downloads ...</a></article>
+</section>
+<section class="container page-grid three program-related">
+  <a class="content-card" href="dos-en.html"><h2>DOS</h2><p>Current development and test platform.</p><p class="platform-note">Open DOS page →</p></a>
+  <a class="content-card" href="windows-en.html"><h2>Windows</h2><p>Planned classic Win16/Win32 coverage.</p><p class="platform-note">Open Windows page →</p></a>
+  <a class="content-card" href="hardware-lab-en.html"><h2>Hardware Lab</h2><p>Real systems where diagnostics can later be documented.</p><p class="platform-note">Open Hardware Lab →</p></a>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner">
+<div><strong>MultiEra Labs</strong><br>Software across generations.</div>
+<div>Modern Edition v0.14 · 07-10-2026</div>
+<div><a href="/legacy/legacy-en.html">Legacy</a> &nbsp;·&nbsp; <a href="/8bit/en/home.html">8-Bit</a></div>
+</div></footer>
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-card"><div class="modal-head"><h2 id="modal-title">Hardware</h2><button class="close" type="button">Close</button></div><div id="modal-body"></div></div></div>
+<script src="script.js?v=0.14"></script>
+</body></html>

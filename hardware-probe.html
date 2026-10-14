@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MultiEra Hardware Probe — MultiEra Labs</title>
+<meta name="description" content="MultiEra Hardware Probe — read-only diagnostics and hardware inventory for DOS and classic systems.">
+<link rel="stylesheet" href="styles.css?v=0.14">
+</head>
+<body class="program-detail">
+<header class="topbar">
+  <div class="container brand-row">
+    <a class="brand" href="index.html" aria-label="MultiEra Labs">
+      <span class="logo-orbit"><i></i><b></b></span>
+      <span class="brand-copy"><strong>MultiEra <span>Labs</span></strong><small>Software across generations.</small></span>
+    </a>
+    <div></div>
+    <div class="lang-search">
+      <div class="lang">
+        <a class="active" href="hardware-probe.html">DE</a>&nbsp;|&nbsp;<a class="" href="hardware-probe-en.html">EN</a>
+      </div>
+      <div class="search"><input id="site-search" type="search" placeholder="Suche ..." aria-label="Suche ..."><button id="search-button" aria-label="Search">⌕</button></div>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <nav class="nav"><div class="container nav-inner">
+<a href="index.html"><span class="ico">⌂</span>Home</a>
+<a class="active" href="projects.html"><span class="ico">⚙</span>Projekte</a>
+<a href="platforms.html"><span class="ico">▱</span>Plattformen</a>
+<a href="hardware-lab.html"><span class="ico">▣</span>Hardware Lab</a>
+<a href="browser-lab.html"><span class="ico">◎</span>Browser Lab</a>
+<a href="downloads.html"><span class="ico">⇩</span>Downloads</a>
+<a href="roadmap.html"><span class="ico">☷</span>Roadmap</a>
+<a href="about.html"><span class="ico">ⓘ</span>Über uns</a>
+  </div></nav>
+</header>
+<main>
+
+<section class="page-hero"><div class="container"><div class="page-kicker">IN DEVELOPMENT</div><h1>MultiEra Hardware Probe</h1><p>Read-only Analyse- und Diagnosewerkzeug für klassische Computersysteme.</p></div></section>
+<section class="container detail-layout program-intro">
+  <div class="probe-console" aria-hidden="true"><div>CPU</div><div>RAM</div><div>BUS</div><div>PORTS</div><code>REPORT.TXT</code></div>
+  <div class="detail-copy"><span class="status blue">IN DEVELOPMENT</span><h2>Hardware erfassen, verstehen und dokumentieren — ohne das System selbst zu verändern.</h2><p>Hardware Probe ist für Inventarisierung, Diagnose und Lab-Dokumentation gedacht. Das Werkzeug liest Informationen und meldet Auffälligkeiten, führt aber keine automatischen Reparaturen aus.</p><div class="platform-meta"><span>DOS</span><span>Windows</span><span>READ-ONLY</span><span>TXT REPORTS</span></div></div>
+</section>
+<section class="container page-grid three">
+  <article class="content-card"><h2>Einsatz</h2><ul class="clean-list"><li>Bestandsaufnahme alter PCs</li><li>Dokumentation vor Umbauten oder Treiberarbeiten</li><li>Fehlersuche und Support</li><li>vergleichbare TXT-Berichte für das MultiEra Hardware Lab</li></ul></article>
+  <article class="content-card"><h2>Aktueller Entwicklungsstand</h2><p>Der DOS-Zweig befindet sich bereits in Entwicklung. Im aktuellen DEV-Stand werden u. a. CPU/CPUID-Daten und XMS-Speicherinformationen erkannt und Diagnosehinweise ausgegeben.</p><p class="platform-note">Interner Entwicklungszweig: DOS DEV 0.03.</p></article>
+  <article class="content-card"><h2>Zielplattformen</h2><div class="platform-meta"><span>DOS</span><span>Win 3.x–XP</span><span>später weitere Systeme</span></div><p>Der aktuelle Schwerpunkt liegt auf DOS und klassischen Windows-Systemen. Weitere Plattformen werden erst nach eigenen Tests als unterstützt geführt.</p></article>
+</section>
+<section class="container page-grid two">
+  <article class="content-card"><h2>Analysebereiche</h2><ul class="clean-list"><li>CPU und FPU</li><li>konventioneller, XMS-/Extended- und weiterer Systemspeicher</li><li>Mainboard- und Bussysteme</li><li>ISA, PCI, Micro Channel, NuBus/Zorro bei späteren Ports</li><li>Schnittstellen und angeschlossene Hardware</li><li>Fehler, Warnungen und erklärende Notices</li></ul></article>
+  <article class="content-card"><h2>Feste Sicherheitsregel</h2><p><strong>Hardware Probe bleibt ein Diagnosewerkzeug.</strong></p><ul class="clean-list"><li>keine automatischen Reparaturen</li><li>keine Registry-/INI-Änderungen</li><li>keine CONFIG.SYS-/AUTOEXEC.BAT-Änderungen</li><li>keine Treiberinstallation</li><li>keine BIOS-/CMOS-Änderungen</li></ul><span class="status gray">READ ONLY</span></article>
+</section>
+<section class="container page-grid two">
+  <article class="content-card"><h2>Berichte</h2><p>Die Ausgabe soll sowohl direkt lesbar als auch als TXT-Bericht speicherbar sein. Damit lassen sich reale Systeme dokumentieren und spätere Änderungen nachvollziehen.</p><ul class="clean-list"><li>Hardwareübersicht</li><li>Diagnosezusammenfassung</li><li>Errors / Warnings / Notices</li><li>Hinweise zur manuellen weiteren Prüfung</li></ul></article>
+  <article class="content-card release-card"><h2>Downloadstatus</h2><p><strong>Noch keine öffentliche Version.</strong></p><p>Entwicklungs-Builds werden erst veröffentlicht, wenn Erkennung und Berichte auf passenden Zielsystemen zuverlässig geprüft sind.</p><a class="cta" href="downloads.html">Zur Downloadübersicht ...</a></article>
+</section>
+<section class="container page-grid three program-related">
+  <a class="content-card" href="dos.html"><h2>DOS</h2><p>Aktuelle Entwicklungs- und Testplattform.</p><p class="platform-note">DOS-Seite öffnen →</p></a>
+  <a class="content-card" href="windows.html"><h2>Windows</h2><p>Geplante klassische Win16-/Win32-Abdeckung.</p><p class="platform-note">Windows-Seite öffnen →</p></a>
+  <a class="content-card" href="hardware-lab.html"><h2>Hardware Lab</h2><p>Reale Systeme, auf denen Diagnosen später dokumentiert werden.</p><p class="platform-note">Hardware Lab öffnen →</p></a>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner">
+<div><strong>MultiEra Labs</strong><br>Software across generations.</div>
+<div>Modern Edition v0.14 · 07-10-2026</div>
+<div><a href="/legacy/">Legacy</a> &nbsp;·&nbsp; <a href="/8bit/de/home.html">8-Bit</a></div>
+</div></footer>
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-card"><div class="modal-head"><h2 id="modal-title">Hardware</h2><button class="close" type="button">Schließen</button></div><div id="modal-body"></div></div></div>
+<script src="script.js?v=0.14"></script>
+</body></html>

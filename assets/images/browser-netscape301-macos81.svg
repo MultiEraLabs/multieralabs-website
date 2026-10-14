@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img">
+<rect width="320" height="180" fill="#bdbdbd"/>
+<rect x="6" y="6" width="308" height="168" fill="#dedede" stroke="#191919" stroke-width="2"/>
+<rect x="9" y="9" width="302" height="17" fill="#f2f2f2" stroke="#555"/>
+<text x="16" y="21" font-family="Geneva,Arial,sans-serif" font-size="9" fill="#111">File  Edit  View  Go  Bookmarks  Help</text>
+<rect x="9" y="29" width="302" height="19" fill="#cfcfcf" stroke="#777"/>
+<rect x="15" y="33" width="34" height="11" fill="#eee" stroke="#666"/><text x="19" y="42" font-family="Geneva,Arial" font-size="8">Back</text>
+<rect x="55" y="33" width="34" height="11" fill="#eee" stroke="#666"/><text x="58" y="42" font-family="Geneva,Arial" font-size="8">Open</text>
+<rect x="95" y="33" width="204" height="11" fill="#fff" stroke="#777"/><text x="100" y="42" font-family="Monaco,monospace" font-size="7">http://multiera.local/</text>
+<rect x="9" y="51" width="302" height="107" fill="#fff" stroke="#777"/>
+<rect x="17" y="59" width="286" height="22" fill="#5a4b8a"/>
+<text x="25" y="74" font-family="Geneva,Arial" font-weight="bold" font-size="14" fill="#fff">MultiEra Labs</text>
+<text x="25" y="91" font-family="Geneva,Arial" font-size="9" fill="#333">Software across generations.</text>
+<line x1="25" y1="98" x2="285" y2="98" stroke="#aaa"/>
+<text x="25" y="111" font-family="Geneva,Arial" font-size="9" fill="#111">Welcome   Projects   Platforms</text>
+<text x="25" y="126" font-family="Geneva,Arial" font-size="9" fill="#111">Hardware Lab   Browser Lab</text>
+<rect x="25" y="136" width="105" height="10" fill="#e7e7e7" stroke="#aaa"/>
+<text x="31" y="144" font-family="Geneva,Arial" font-size="7" fill="#333">Legacy page loaded</text>
+<rect x="9" y="160" width="302" height="11" fill="#cfcfcf" stroke="#777"/>
+<text x="15" y="168" font-family="Geneva,Arial" font-size="7" fill="#222">Mac OS 8.1 · Netscape 3.01 · PASS</text>
+<text x="264" y="21" font-family="Geneva,Arial" font-size="8" font-weight="bold" fill="#111">Netscape 3.01</text>
+</svg>

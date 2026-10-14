@@ -1,0 +1,1050 @@
+
+:root{
+  --bg:#03111b;
+  --bg2:#061a28;
+  --panel:#071c29;
+  --panel2:#0b2636;
+  --line:#124b64;
+  --line-soft:rgba(112,188,224,.22);
+  --text:#eef7fb;
+  --muted:#a9c0cc;
+  --orange:#ff8a00;
+  --orange2:#ffad36;
+  --cyan:#65c9eb;
+  --green:#24d79a;
+  --blue:#1479d1;
+  --purple:#9163c7;
+  --radius:14px;
+  --shadow:0 20px 55px rgba(0,0,0,.34);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(circle at 70% -10%,rgba(33,116,174,.22),transparent 34%),
+    radial-gradient(circle at 96% 11%,rgba(255,104,17,.10),transparent 25%),
+    linear-gradient(#020c14,#05131d 40%,#020b12);
+  min-height:100vh;
+}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1540px,calc(100% - 34px));margin:0 auto}
+.topbar{
+  border-bottom:1px solid var(--line);
+  background:rgba(2,14,23,.95);
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 8px 30px rgba(0,0,0,.22)
+}
+.brand-row{
+  min-height:84px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:26px;align-items:center
+}
+.brand{display:flex;align-items:center;gap:14px}
+.logo-orbit{width:98px;height:62px;position:relative}
+.logo-orbit:before{
+  content:"";position:absolute;left:22px;top:8px;width:48px;height:48px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#52a9d7 0 18%,#2d8bbd 19% 50%,#287943 51% 67%,#24659c 68%);
+  box-shadow:inset -8px -8px 12px rgba(0,0,0,.23)
+}
+.logo-orbit:after{
+  content:"";position:absolute;left:4px;top:18px;width:86px;height:29px;border:4px solid var(--orange);
+  border-radius:50%;transform:rotate(-8deg)
+}
+.logo-orbit i,.logo-orbit b{
+  position:absolute;width:8px;height:8px;border-radius:50%;background:var(--orange);z-index:3
+}
+.logo-orbit i{left:3px;top:31px}.logo-orbit b{right:4px;top:25px}
+.brand-copy strong{font-size:37px;letter-spacing:-1px;display:block;line-height:.95}
+.brand-copy strong span{color:var(--orange)}
+.brand-copy small{font-size:15px;color:#d7e4ea;letter-spacing:.02em}
+.lang-search{display:flex;align-items:center;gap:20px}
+.lang{font-weight:bold;font-size:13px}.lang a.active{color:var(--orange)}
+.search{
+  border:1px solid #275a72;border-radius:999px;background:#0b2738;
+  height:39px;display:flex;align-items:center;padding:0 13px;gap:8px
+}
+.search input{width:215px;border:0;background:transparent;color:#e9f4f8;outline:none}
+.search button{background:none;border:0;color:var(--cyan);cursor:pointer}
+.nav{
+  border-top:1px solid rgba(255,255,255,.04);
+  background:#03111b
+}
+.nav-inner{display:flex;min-height:57px;align-items:center;gap:14px}
+.nav a{
+  min-height:42px;padding:0 18px;display:flex;align-items:center;gap:9px;
+  border:1px solid transparent;border-radius:8px;font-size:15px
+}
+.nav a:hover,.nav a.active{border-color:var(--orange);color:var(--orange);box-shadow:inset 0 0 18px rgba(255,138,0,.08)}
+.nav .ico{font-size:17px;color:#b8d5e2}
+
+.hero{
+  border:1px solid #116389;border-radius:0 0 8px 8px;overflow:hidden;
+  background:
+    radial-gradient(circle at 63% 40%,rgba(33,123,182,.28),transparent 30%),
+    radial-gradient(circle at 86% 9%,rgba(255,80,13,.18),transparent 24%),
+    linear-gradient(110deg,#071926 0 42%,#07243a 60%,#08111c);
+  min-height:336px;position:relative
+}
+.hero:after{
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.014) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.014) 1px,transparent 1px);
+  background-size:32px 32px;pointer-events:none
+}
+.hero-inner{display:grid;grid-template-columns:.9fr 1.1fr;min-height:336px;align-items:center;position:relative;z-index:2}
+.kicker{color:var(--orange);font-weight:800;letter-spacing:.25em;font-size:17px;margin-bottom:7px}
+.hero h1{font-size:54px;line-height:.93;margin:0 0 15px;letter-spacing:-2px}
+.hero p{font-size:18px;line-height:1.34;color:#d7e8ef;max-width:540px;margin:0 0 18px}
+.editions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.editions a{
+  border:1px solid #28708e;background:rgba(8,33,48,.75);border-radius:999px;
+  min-width:115px;padding:9px 18px;text-align:center
+}
+.editions a.active{border-color:var(--orange);color:var(--orange);box-shadow:0 0 18px rgba(255,138,0,.24)}
+.edition-note{font-size:12px;color:#a8bfca;margin-top:12px}
+.hero-machines{height:310px;position:relative;display:flex;align-items:flex-end;justify-content:flex-end;padding:0 8px 47px}
+.hero-machines:before{content:"";position:absolute;left:5%;right:1%;bottom:45px;height:2px;background:var(--orange)}
+.hero-machine{position:relative;margin-left:-6px;filter:drop-shadow(0 15px 15px rgba(0,0,0,.45))}
+.hero-machine .monitor{background:#d9d0b9;border:4px solid #978e79;border-radius:5px;position:relative}
+.hero-machine .screen{position:absolute;background:radial-gradient(circle at 50% 45%,#375764,#122530 70%);border:4px solid #3a3d3d}
+.hm-8{width:156px;height:138px}.hm-8 .monitor{width:78px;height:69px;margin-left:47px}.hm-8 .screen{inset:10px}
+.hm-8 .keyboard{width:118px;height:27px;background:#d0c6ad;border:3px solid #8f8776;margin:5px auto 0;transform:skewX(-12deg)}
+.hm-68{width:143px;height:175px}.hm-68 .monitor{width:95px;height:90px;margin-left:22px}.hm-68 .screen{inset:12px}
+.hm-68 .base{width:117px;height:30px;margin:4px auto;background:#d1c6ae;border:3px solid #8f8776}
+.hm-ppc{width:114px;height:184px}.hm-ppc .tower{width:74px;height:166px;margin:auto;background:linear-gradient(90deg,#c3b89e,#e3d9c0,#aaa188);border:3px solid #938b78}
+.hm-x86{width:180px;height:178px}.hm-x86 .monitor{width:120px;height:105px;margin:0 auto}.hm-x86 .screen{inset:15px;background:#d9e7ed}.hm-x86 .base{width:105px;height:24px;margin:4px auto;background:#cbc3ad;border:3px solid #8d8676}
+.hm-g5{width:105px;height:192px}.hm-g5 .tower{width:66px;height:172px;margin:auto;background:linear-gradient(90deg,#777f85,#d5dadc 45%,#8c969c);border-radius:7px;border:2px solid #dfe4e6}
+.hm-modern{width:160px;height:188px}.hm-modern .monitor{width:145px;height:123px;background:#d0d4d5;border-color:#5c6467}.hm-modern .screen{inset:9px;background:linear-gradient(135deg,#18265a,#3f2c84 50%,#1f6b9d)}
+.timeline{position:absolute;left:0;right:0;bottom:0;height:43px;display:grid;grid-template-columns:repeat(6,1fr);font-size:10px;text-align:center;color:#dce9ee}
+.timeline div:before{content:"";display:block;width:9px;height:9px;border-radius:50%;background:var(--orange);margin:-5px auto 4px}
+.timeline b{display:block}.timeline span{color:#9fb4be}
+
+.band{margin-top:12px}
+.band-title{display:flex;align-items:center;justify-content:space-between;color:var(--orange);font-size:20px;font-weight:800;margin:0 0 8px}
+.band-title small{font-size:12px;font-weight:600;color:var(--orange)}
+.grid{display:grid;gap:10px}
+.projects{grid-template-columns:1.18fr .92fr}
+.project-card{
+  border:1px solid var(--line);border-radius:10px;background:linear-gradient(145deg,#071b28,#03111b);
+  min-height:290px;overflow:hidden;box-shadow:var(--shadow)
+}
+.project-inner{display:grid;grid-template-columns:38% 62%;height:100%}
+.project-media{display:grid;place-items:center;padding:16px;background:radial-gradient(circle at 50% 40%,rgba(60,136,177,.16),transparent 65%)}
+.g15-photo{width:100%;max-height:235px;object-fit:contain;filter:drop-shadow(0 18px 20px rgba(0,0,0,.55))}.g15-lcd{max-height:190px;width:96%;}
+.project-copy{padding:20px 22px 18px}
+.project-copy h2{font-size:31px;color:var(--orange);margin:0 0 0}
+.project-copy .sub{color:#c6d7de;font-size:17px;margin:0 0 13px}
+.project-copy ul{list-style:none;padding:0;margin:0 0 15px;line-height:1.52;color:#d5e4ea;font-size:14px}
+.project-copy li:before{content:"■";color:var(--orange);font-size:10px;margin-right:9px}
+.cta{display:inline-flex;border:2px solid var(--orange);color:var(--orange);border-radius:999px;padding:8px 22px;font-weight:bold;box-shadow:0 0 13px rgba(255,138,0,.14)}
+.browser-project{display:grid;grid-template-columns:1fr 180px;align-items:center;padding:19px 18px 16px}
+.browser-mark{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.browser-mark .mini-globe{width:67px;height:45px;border:4px solid var(--orange);border-radius:50%;position:relative}
+.browser-mark .mini-globe:after{content:"";position:absolute;width:36px;height:36px;border-radius:50%;background:#287bab;left:11px;top:1px}
+.browser-project h2{font-size:26px;margin:0}.browser-project h2 span{color:var(--orange)}
+.browser-project .sub{font-size:16px;margin:2px 0 14px;color:#c6d7de}
+.browser-project ul{list-style:none;margin:0;padding:0;color:#d7e6ec;line-height:1.55;font-size:14px}
+.browser-project li:before{content:"■";color:var(--orange);font-size:9px;margin-right:8px}
+.browser-shot{height:206px;border:1px solid #557b90;background:#d8d6c6;box-shadow:0 10px 30px rgba(0,0,0,.4);overflow:hidden}
+.browser-shot .chrome{height:39px;background:#c7c7c7;border-bottom:3px ridge #fff;color:#111;font-size:9px;padding:5px}
+.browser-shot .window{margin:7px;background:#fff;color:#123;padding:8px;height:151px;font-size:10px}
+.browser-shot .window strong{display:block;background:#052747;color:white;padding:5px;margin:-8px -8px 7px}.browser-shot .window strong span{color:var(--orange)}
+
+.cards-6{grid-template-columns:repeat(6,1fr)}
+.tile{
+  min-height:144px;border:1px solid var(--line);border-radius:9px;
+  background:linear-gradient(155deg,#0a2635,#04131d);padding:11px;position:relative;overflow:hidden
+}
+.tile:hover{border-color:#24779a}
+.tile-media{height:83px;display:flex;align-items:center;justify-content:center}
+.tile h3{font-size:17px;margin:3px 0 3px}.tile p{font-size:12px;color:#d3e1e7;margin:0;line-height:1.25}
+.tile .arrow{position:absolute;right:9px;bottom:36px;color:var(--orange);font-size:27px}
+.hardware-card{min-height:176px}
+.hardware-card .tile-media{height:102px}
+.hardware-card img{max-height:92px;width:auto;max-width:96%;object-fit:contain}
+.hardware-card h3{font-size:16px;line-height:1.05}
+.hardware-card p{font-size:11px;color:#d3e1e7}
+.status{
+  display:inline-block;margin-top:6px;padding:4px 8px;border-radius:4px;border:1px solid var(--green);
+  color:#dffcf2;background:#0a4b3b;font-size:10px
+}
+.status.blue{border-color:#2aa0ff;background:#0c4773}.status.gray{border-color:#6c8796;background:#233947}
+.photo-dark{background:#0c2430;border-radius:6px;padding:5px}
+.photo-dark img{mix-blend-mode:normal}
+.platform-mac img{max-height:80px}
+.win98{width:77px;height:66px;border:7px solid #c8c5b4;background:#d9d7c8;position:relative}
+.win98:before{content:"WIN 98";position:absolute;inset:9px;background:#dce7ec;color:#164b78;display:grid;place-items:center;font-size:10px;font-weight:bold}
+.amiga-art{width:110px;height:33px;background:#c7bda8;border:2px solid #8e8472;position:relative}.amiga-art:before{content:"";position:absolute;left:12px;right:12px;top:7px;height:15px;background:repeating-linear-gradient(90deg,#444 0 4px,#b9b09d 4px 8px)}
+.amiga-ball{width:37px;height:37px;border-radius:50%;background:conic-gradient(#e72531 0 25%,#fff 0 50%,#e72531 0 75%,#fff 0);margin-left:8px;border:1px solid #ddd}
+.c64-art{width:122px;height:42px;background:#d8ccb2;border:2px solid #8d836f;transform:skewX(-8deg);position:relative}.c64-art:after{content:"";position:absolute;inset:8px 13px;background:repeating-linear-gradient(90deg,#403c35 0 5px,#d8ccb2 5px 9px)}
+.joystick{width:70px;height:41px;background:#171b1e;border-radius:5px;position:relative}.joystick:before{content:"";position:absolute;left:32px;top:-39px;width:7px;height:43px;background:#202327}.joystick:after{content:"";position:absolute;left:24px;top:-50px;width:24px;height:24px;border-radius:50%;background:#ef1831;box-shadow:0 0 0 2px #820919}
+.dos-art{width:118px;height:72px;background:#090a0b;border:8px solid #575b60;border-radius:4px;display:grid;place-items:center;font-family:monospace;font-size:22px}
+.g5-art{width:70px;height:103px;background:linear-gradient(90deg,#6c7479,#d1d6d8 45%,#838b90);border-radius:6px;position:relative}.g5-art:after{content:"";position:absolute;inset:8px;background-image:radial-gradient(circle,#687177 1px,transparent 2px);background-size:7px 7px}
+.pc-art{display:flex;gap:7px;align-items:flex-end}.pc-tower{width:38px;height:80px;background:#383d43}.pc-monitor{width:76px;height:58px;border:7px solid #c5bda8;background:#2a668d}.pc-kbd{width:80px;height:12px;background:#c5bda8;transform:skewX(-15deg)}
+.section-split{display:grid;grid-template-columns:1.95fr .95fr;gap:10px}
+.browser-grid{grid-template-columns:repeat(6,1fr)}
+.browser-test{
+  min-height:117px;border:1px solid var(--line);border-radius:8px;background:#081d29;padding:9px
+}
+.browser-test .shot{height:62px;border:2px solid #425766;background:#d1d0c8;margin-bottom:5px;overflow:hidden;position:relative}
+.browser-test .shot:before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:#bcbcbc}
+.browser-test .shot:after{content:"";position:absolute;left:5px;right:5px;top:17px;bottom:5px;background:repeating-linear-gradient(#fff 0 5px,#ece9df 5px 9px)}
+.browser-test strong{font-size:11px;display:block}.browser-test span{font-size:10px;color:#b9ccd5}
+.news{border:1px solid var(--line);border-radius:8px;background:#081d29;padding:9px 13px}
+.news h3{color:var(--orange);font-size:18px;margin:0 0 8px}
+.news-row{display:grid;grid-template-columns:90px 1fr;gap:6px;font-size:11px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.news-row time{color:var(--orange);font-weight:bold}.news-row:last-child{border-bottom:0}
+
+.bottom-grid{grid-template-columns:repeat(3,1fr);margin-bottom:18px}
+.bottom-card{border:1px solid var(--line);border-radius:9px;background:#071b27;padding:15px 18px;min-height:120px}
+.bottom-card h3{color:var(--orange);margin:0 0 9px}.bottom-card p{color:#c0d2da;font-size:13px;line-height:1.45;margin:0 0 13px}
+
+.footer{border-top:1px solid var(--line);padding:30px 0 50px;color:#91a9b5;font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:center}
+.footer strong{color:white}.footer a{color:#c4d9e2}.footer a:hover{color:var(--orange)}
+
+.modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.74);z-index:200;display:none;align-items:center;justify-content:center;padding:24px
+}
+.modal.open{display:flex}
+.modal-card{width:min(800px,100%);max-height:85vh;overflow:auto;border:1px solid #1e607e;background:#071824;border-radius:18px;padding:25px;box-shadow:0 30px 100px rgba(0,0,0,.6)}
+.modal-head{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:16px}.modal-head h2{margin:0}.close{border:1px solid var(--line);background:#0b2634;color:white;border-radius:8px;padding:7px 10px;cursor:pointer}
+.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.profile-box{border:1px solid var(--line-soft);border-radius:10px;background:#0a2230;padding:14px}.profile-box h3{color:var(--orange);margin:0 0 7px}.profile-box p,.profile-box li{font-size:13px;line-height:1.5;color:#d0e0e6}.profile-box ul{padding-left:18px}
+
+@media (max-width:1100px){
+  .brand-row{grid-template-columns:1fr auto}.lang-search{grid-column:2}.nav-inner{overflow-x:auto}
+  .hero-inner{grid-template-columns:1fr}.hero{padding-top:20px}.hero-copy{padding:35px 0 0}
+  .hero-machines{margin-top:-30px}
+  .projects{grid-template-columns:1fr}
+  .cards-6{grid-template-columns:repeat(3,1fr)}
+  .section-split{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .container{width:min(100% - 18px,1540px)}
+  .brand-row{min-height:72px;gap:8px}.logo-orbit{width:63px;height:48px}.logo-orbit:before{left:16px;top:7px;width:36px;height:36px}.logo-orbit:after{left:4px;top:15px;width:57px;height:22px;border-width:3px}
+  .brand-copy strong{font-size:24px}.brand-copy small{font-size:10px}.search{display:none}
+  .lang-search{gap:8px}
+  .nav a{padding:0 12px;font-size:13px}.nav-inner{gap:3px}
+  .hero-inner{display:block}.hero{min-height:auto}.hero-copy{padding:28px 0}.kicker{font-size:13px}.hero h1{font-size:42px}.hero p{font-size:15px}
+  .hero-machines{height:245px;transform:scale(.9);transform-origin:center bottom;margin-top:-10px}
+  .timeline{font-size:8px}
+  .project-inner{grid-template-columns:1fr}.project-media{max-height:230px}.browser-project{grid-template-columns:1fr}.browser-shot{display:none}
+  .cards-6,.browser-grid{grid-template-columns:repeat(2,1fr)}
+  .bottom-grid{grid-template-columns:1fr}.section-split{display:block}.news{margin-top:10px}
+  .footer-inner{display:block}.footer-inner>*{margin-bottom:10px}
+  .profile-grid{grid-template-columns:1fr}
+}
+
+/* v0.3 — approved MultiEra original hardware renders */
+.hardware-card .tile-media{
+  background:radial-gradient(circle at 50% 55%,rgba(45,120,155,.12),transparent 68%);
+}
+.hardware-card .tile-media img{
+  max-height:104px;
+  max-width:98%;
+  object-fit:contain;
+  filter:drop-shadow(0 10px 10px rgba(0,0,0,.36));
+}
+.platform-mac .tile-media img{
+  max-height:86px;
+  object-fit:contain;
+  filter:drop-shadow(0 8px 8px rgba(0,0,0,.32));
+}
+@media (max-width:720px){
+  .hardware-card .tile-media{height:118px}
+  .hardware-card .tile-media img{max-height:112px}
+}
+
+/* v0.4 — full Modern site structure */
+.band-title small a{color:var(--orange)}
+.page-hero{
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 80% 0,rgba(22,108,159,.22),transparent 32%),
+    linear-gradient(135deg,#071a28,#03111b);
+  padding:54px 0 45px;margin-bottom:18px
+}
+.page-kicker{color:var(--orange);font-size:13px;font-weight:800;letter-spacing:.22em;margin-bottom:8px}
+.page-hero h1{font-size:45px;line-height:1;margin:0 0 13px}
+.page-hero p{font-size:18px;line-height:1.5;color:#c7dbe4;max-width:850px;margin:0}
+.page-grid{display:grid;gap:14px;margin-bottom:22px}.page-grid.two{grid-template-columns:repeat(2,1fr)}.page-grid.three{grid-template-columns:repeat(3,1fr)}
+.content-card{border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,#092433,#061720);padding:22px;box-shadow:0 16px 35px rgba(0,0,0,.2)}
+.content-card h2{color:var(--orange);font-size:24px;margin:0 0 12px}.content-card p{color:#d1e0e6;line-height:1.55}
+.clean-list{list-style:none;padding:0;margin:10px 0 18px}.clean-list li{padding:5px 0;color:#d2e1e7;line-height:1.4}.clean-list li:before{content:"■";color:var(--orange);font-size:9px;margin-right:9px}
+.feature-row{display:grid;grid-template-columns:230px 1fr;gap:18px;align-items:center}.feature-art img{max-height:150px;margin:auto;filter:drop-shadow(0 12px 12px rgba(0,0,0,.4))}
+.detail-layout{display:grid;grid-template-columns:minmax(300px,.8fr) 1.2fr;gap:28px;align-items:center;border:1px solid var(--line);border-radius:14px;background:#071c28;padding:28px;margin-bottom:18px}.detail-hero-art img{max-height:300px;margin:auto;filter:drop-shadow(0 20px 22px rgba(0,0,0,.5))}.detail-copy h2{font-size:30px;color:var(--orange);margin:0 0 10px}.detail-copy p{color:#d2e1e7;line-height:1.55}
+.hardware-stack{display:grid;gap:14px;margin-bottom:22px}.hardware-profile{display:grid;grid-template-columns:280px 1fr;gap:22px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#0a2635,#04141e);padding:20px}.hardware-profile-art{display:flex;align-items:center;justify-content:center;min-height:190px}.hardware-profile-art img{max-width:100%;max-height:190px;filter:drop-shadow(0 16px 18px rgba(0,0,0,.38))}.hardware-profile-copy h2{font-size:28px;margin:3px 0 7px}.eyebrow{color:var(--green);font-size:11px;font-weight:800;letter-spacing:.14em}.spec-line{color:#bcd1da}.future-note{font-size:12px;color:#87a3af;border-top:1px solid rgba(255,255,255,.07);padding-top:9px}
+.table-card{border:1px solid var(--line);border-radius:12px;background:#071c28;padding:6px;overflow-x:auto;margin-bottom:22px}.modern-table{width:100%;border-collapse:collapse;min-width:760px}.modern-table th{text-align:left;background:#0d3143;color:var(--orange);padding:12px;font-size:13px}.modern-table td{padding:12px;border-top:1px solid rgba(255,255,255,.08);color:#d0e0e6;font-size:13px}
+.roadmap-list{display:grid;gap:10px;margin-bottom:24px}.roadmap-step{display:grid;grid-template-columns:110px 1fr;gap:18px;border:1px solid var(--line);border-radius:11px;background:#071b27;padding:18px}.roadmap-step .phase{color:var(--orange);font-weight:800;font-size:12px;letter-spacing:.12em}.roadmap-step h2{margin:0 0 6px;font-size:21px}.roadmap-step p{margin:0;color:#c3d5dd;line-height:1.45}
+@media (max-width:800px){
+  .page-grid.two,.page-grid.three{grid-template-columns:1fr}
+  .feature-row,.detail-layout,.hardware-profile{grid-template-columns:1fr}
+  .feature-art img{max-height:135px}.detail-hero-art img{max-height:220px}
+  .hardware-profile-art{min-height:150px}.hardware-profile-art img{max-height:160px}
+  .roadmap-step{grid-template-columns:1fr;gap:5px}
+  .page-hero{padding:38px 0 32px}.page-hero h1{font-size:37px}.page-hero p{font-size:16px}
+  .g15-lcd{max-height:150px}
+}
+
+
+/* ============================================================
+   v0.5 MOBILE POLISH
+   ============================================================ */
+
+.menu-toggle{
+  display:none;
+  appearance:none;
+  border:1px solid #285b73;
+  background:#082131;
+  color:#e9f5fa;
+  border-radius:9px;
+  width:42px;
+  height:40px;
+  font-size:24px;
+  line-height:1;
+  cursor:pointer;
+}
+.menu-toggle:hover,
+.menu-toggle:focus{
+  border-color:var(--orange);
+  color:var(--orange);
+}
+
+/* C64 platform tile now uses the approved original render. */
+.platform-c64-render{
+  max-height:82px;
+  max-width:92%;
+  object-fit:contain;
+  filter:drop-shadow(0 9px 10px rgba(0,0,0,.34));
+}
+
+/* Slightly tighter G15 artwork on all smaller layouts. */
+.g15-lcd{
+  width:min(92%,520px);
+  margin:auto;
+}
+
+@media (max-width:800px){
+
+  /* Header: compact brand + language + hamburger.
+     Full nav remains hidden until explicitly opened. */
+  .topbar{
+    position:sticky;
+    top:0;
+  }
+  .brand-row{
+    grid-template-columns:1fr auto;
+    min-height:82px;
+    gap:8px;
+  }
+  .lang-search{
+    grid-column:2;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .lang{
+    white-space:nowrap;
+  }
+  .menu-toggle{
+    display:inline-grid;
+    place-items:center;
+  }
+  .nav{
+    display:none;
+    border-top:1px solid var(--line);
+  }
+  .nav.open{
+    display:block;
+  }
+  .nav-inner{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:7px;
+    padding:8px 0 12px;
+    overflow:visible;
+  }
+  .nav a{
+    min-height:44px;
+    padding:0 12px;
+    border:1px solid #173c4e;
+    background:#061a27;
+    border-radius:8px;
+    font-size:13px;
+  }
+  .nav a.active{
+    border-color:var(--orange);
+  }
+
+  /* Hero: keep the visual story, but make the machine row much more compact.
+     The giant clipped machine silhouettes are replaced by six small evenly
+     distributed generation markers above the timeline. */
+  .hero{
+    padding-top:0;
+  }
+  .hero-inner{
+    display:block;
+  }
+  .hero-copy{
+    padding:28px 10px 8px;
+  }
+  .hero h1{
+    font-size:42px;
+    line-height:.96;
+  }
+  .hero p{
+    font-size:15px;
+  }
+  .editions{
+    gap:8px;
+  }
+  .editions a{
+    min-width:0;
+    flex:1 1 30%;
+    padding:9px 10px;
+  }
+  .edition-note{
+    line-height:1.35;
+  }
+
+  .hero-machines{
+    height:188px;
+    margin:4px 0 0;
+    padding:0 8px 42px;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    align-items:end;
+    justify-items:center;
+    transform:none;
+    overflow:hidden;
+  }
+  .hero-machines:before{
+    left:7%;
+    right:7%;
+    bottom:42px;
+  }
+  .hero-machine{
+    margin:0;
+    width:54px !important;
+    height:95px !important;
+    transform:scale(.48);
+    transform-origin:center bottom;
+    filter:drop-shadow(0 8px 8px rgba(0,0,0,.42));
+  }
+  .hm-8{transform:scale(.42)}
+  .hm-68{transform:scale(.42)}
+  .hm-ppc{transform:scale(.48)}
+  .hm-x86{transform:scale(.40)}
+  .hm-g5{transform:scale(.49)}
+  .hm-modern{transform:scale(.42)}
+
+  .timeline{
+    height:40px;
+    font-size:7px;
+    line-height:1.15;
+  }
+  .timeline div:before{
+    width:8px;
+    height:8px;
+  }
+  .timeline b{
+    font-size:8px;
+  }
+  .timeline span{
+    font-size:7px;
+  }
+
+  /* G15Control project: reduce dead vertical space around the LCD. */
+  .project-inner{
+    grid-template-columns:1fr;
+  }
+  .project-media{
+    min-height:150px;
+    max-height:168px;
+    padding:16px 18px 0;
+    align-items:end;
+  }
+  .project-media .g15-lcd{
+    width:min(76%,430px);
+    max-height:128px;
+  }
+  .project-copy{
+    padding:12px 22px 20px;
+  }
+  .project-copy h2{
+    font-size:31px;
+  }
+
+  /* Platform cards */
+  .platform-c64-render{
+    max-height:92px;
+  }
+}
+
+@media (max-width:520px){
+  .brand-copy strong{
+    font-size:22px;
+  }
+  .brand-copy small{
+    font-size:10px;
+  }
+  .logo-orbit{
+    width:58px;
+  }
+  .lang{
+    font-size:12px;
+  }
+  .menu-toggle{
+    width:38px;
+    height:38px;
+  }
+  .hero h1{
+    font-size:38px;
+  }
+  .hero-machines{
+    height:174px;
+  }
+  .project-media{
+    min-height:142px;
+    max-height:158px;
+  }
+  .project-media .g15-lcd{
+    width:82%;
+  }
+}
+
+
+/* ============================================================
+   v0.7 — MOBILE HEADER + GENERATION HERO FINAL PASS
+   ============================================================ */
+
+@media (max-width:800px){
+
+  /* --- Header: ONLY logo + DE/EN + hamburger while closed --- */
+  .brand-row{
+    grid-template-columns:minmax(0,1fr) auto !important;
+    grid-template-rows:auto !important;
+    min-height:76px !important;
+    padding-top:8px;
+    padding-bottom:8px;
+    align-items:center;
+  }
+
+  /* Desktop spacer is the reason the controls wrapped onto a second row. */
+  .brand-row > div:nth-child(2){
+    display:none !important;
+  }
+
+  .brand{
+    min-width:0;
+  }
+
+  .brand-copy strong{
+    white-space:nowrap;
+  }
+
+  .lang-search{
+    grid-column:2 !important;
+    grid-row:1 !important;
+    justify-self:end;
+    display:flex !important;
+    align-items:center;
+    gap:9px;
+  }
+
+  .search{
+    display:none !important;
+  }
+
+  .menu-toggle{
+    display:inline-grid !important;
+    place-items:center;
+    width:42px;
+    height:42px;
+    border-radius:999px;
+    border:1px solid #49677a;
+    background:#eef0f1;
+    color:#07131b;
+    font-weight:700;
+    box-shadow:0 5px 14px rgba(0,0,0,.22);
+  }
+
+  /* Force-close the whole nav in Safari. It exists only after tapping ☰. */
+  header.topbar > nav.nav:not(.open){
+    display:none !important;
+    visibility:hidden !important;
+    height:0 !important;
+    overflow:hidden !important;
+    border:0 !important;
+  }
+
+  header.topbar > nav.nav.open{
+    display:block !important;
+    visibility:visible !important;
+    height:auto !important;
+    overflow:visible !important;
+    border-top:1px solid var(--line) !important;
+  }
+
+  .nav-inner{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    padding:9px 0 12px;
+    gap:7px;
+  }
+
+  .nav a{
+    justify-content:flex-start;
+  }
+
+  /* --- Hero generation row: six small purpose-built pictograms --- */
+  .hero-machines{
+    height:150px !important;
+    padding:0 14px 41px !important;
+    margin:3px 0 0 !important;
+    display:grid !important;
+    grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+    align-items:end !important;
+    justify-items:center !important;
+    overflow:visible !important;
+  }
+
+  .hero-machines:before{
+    left:8% !important;
+    right:8% !important;
+    bottom:39px !important;
+  }
+
+  .hero-machine{
+    width:54px !important;
+    height:66px !important;
+    margin:0 !important;
+    padding:0 !important;
+    transform:none !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-end !important;
+    position:relative !important;
+  }
+
+  /* Reset desktop shapes. */
+  .hero-machine .monitor,
+  .hero-machine .screen,
+  .hero-machine .keyboard,
+  .hero-machine .base,
+  .hero-machine .tower{
+    margin:0 !important;
+    transform:none !important;
+    box-sizing:border-box !important;
+  }
+
+  /* 8-bit: compact wedge keyboard. */
+  .hm-8 .monitor{display:none !important}
+  .hm-8 .keyboard{
+    display:block !important;
+    width:45px !important;
+    height:14px !important;
+    border:2px solid #91866d !important;
+    border-radius:2px !important;
+    background:
+      repeating-linear-gradient(90deg,#444 0 3px,#d5cbb4 3px 6px),
+      #d5cbb4 !important;
+    clip-path:polygon(8% 15%,92% 15%,100% 100%,0 100%);
+  }
+
+  /* 68k: small CRT on a pizza-box base. */
+  .hm-68 .monitor{
+    display:block !important;
+    width:34px !important;
+    height:31px !important;
+    border:3px solid #938a75 !important;
+    border-radius:2px !important;
+    background:#d8ceb6 !important;
+    position:relative !important;
+  }
+  .hm-68 .screen{
+    display:block !important;
+    position:absolute !important;
+    inset:5px !important;
+    border:2px solid #455057 !important;
+    background:#7693a0 !important;
+  }
+  .hm-68 .base{
+    display:block !important;
+    width:42px !important;
+    height:11px !important;
+    margin-top:2px !important;
+    border:2px solid #918875 !important;
+    background:#d0c5ad !important;
+  }
+
+  /* PPC: beige vertical tower. */
+  .hm-ppc .tower{
+    display:block !important;
+    width:23px !important;
+    height:49px !important;
+    border:2px solid #958b75 !important;
+    background:linear-gradient(90deg,#c4b99f,#e1d7bd 55%,#b1a58c) !important;
+  }
+
+  /* x86: beige CRT + tiny tower. */
+  .hm-x86{
+    flex-direction:row !important;
+    justify-content:center !important;
+    gap:2px !important;
+  }
+  .hm-x86 .monitor{
+    display:block !important;
+    width:31px !important;
+    height:27px !important;
+    border:3px solid #918978 !important;
+    background:#d6cdb7 !important;
+    position:relative !important;
+  }
+  .hm-x86 .screen{
+    display:block !important;
+    position:absolute !important;
+    inset:4px !important;
+    border:1px solid #50585c !important;
+    background:#8aa5b1 !important;
+  }
+  .hm-x86 .base{display:none !important}
+  .hm-x86:after{
+    content:"";
+    display:block;
+    width:12px;
+    height:39px;
+    border:2px solid #858079;
+    background:linear-gradient(90deg,#aaa28f,#d2c7aa);
+  }
+
+  /* x64: G5-style silver tower. */
+  .hm-g5 .tower{
+    display:block !important;
+    width:24px !important;
+    height:52px !important;
+    border:1px solid #d4dadd !important;
+    border-radius:3px !important;
+    background:
+      radial-gradient(circle,#7a8388 1px,transparent 1.5px) 0 0/6px 6px,
+      linear-gradient(90deg,#798287,#d6dbdd 48%,#899297) !important;
+  }
+
+  /* ARM: modern flat display. */
+  .hm-modern .monitor{
+    display:block !important;
+    width:43px !important;
+    height:32px !important;
+    border:3px solid #697378 !important;
+    border-radius:3px !important;
+    background:#cbd0d2 !important;
+    position:relative !important;
+  }
+  .hm-modern .screen{
+    display:block !important;
+    position:absolute !important;
+    inset:3px !important;
+    border:0 !important;
+    background:linear-gradient(135deg,#253576,#653799 52%,#2475a7) !important;
+  }
+  .hm-modern:after{
+    content:"";
+    display:block;
+    width:15px;
+    height:4px;
+    margin-top:2px;
+    background:#899195;
+    border-radius:2px;
+  }
+
+  .timeline{
+    bottom:0 !important;
+    height:38px !important;
+    line-height:1.05 !important;
+  }
+  .timeline div:before{
+    margin:-4px auto 4px !important;
+  }
+  .timeline b{
+    font-size:8px !important;
+  }
+  .timeline span{
+    font-size:6.5px !important;
+  }
+}
+
+@media (max-width:520px){
+  .brand-row{
+    min-height:70px !important;
+  }
+  .logo-orbit{
+    width:55px !important;
+    height:45px !important;
+  }
+  .brand-copy strong{
+    font-size:21px !important;
+  }
+  .brand-copy small{
+    font-size:9px !important;
+  }
+  .lang-search{
+    gap:7px;
+  }
+  .lang{
+    font-size:11px !important;
+  }
+  .menu-toggle{
+    width:38px !important;
+    height:38px !important;
+    font-size:20px !important;
+  }
+  .hero-machines{
+    height:142px !important;
+    padding-left:8px !important;
+    padding-right:8px !important;
+  }
+  .hero-machine{
+    width:48px !important;
+  }
+}
+
+
+/* ============================================================
+   v0.7 — LEGACY BROWSER + BROWSER LAB ASSET POLISH
+   ============================================================ */
+
+/* Original MultiEra Legacy Browser pictogram. */
+.browser-mark .browser-pictogram{
+  width:72px;
+  height:54px;
+  flex:0 0 auto;
+  object-fit:contain;
+  filter:drop-shadow(0 8px 10px rgba(0,0,0,.34));
+}
+
+/* Real per-browser artwork replaces the former generic .shot dummy. */
+.browser-test .shot{
+  height:72px;
+  border:1px solid #466879;
+  border-radius:4px;
+  background:#07151e;
+  margin-bottom:7px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.03),0 5px 12px rgba(0,0,0,.18);
+}
+.browser-test .shot:before,
+.browser-test .shot:after{
+  content:none;
+  display:none;
+}
+.browser-test .shot img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.browser-test:hover .shot{
+  border-color:var(--orange);
+}
+
+/* Reuse the project pictogram on the detail page without changing page structure. */
+.browser-page-head{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+.browser-page-icon{
+  width:126px;
+  height:94px;
+  object-fit:contain;
+  flex:0 0 auto;
+  filter:drop-shadow(0 13px 18px rgba(0,0,0,.32));
+}
+
+@media (max-width:800px){
+  .browser-mark .browser-pictogram{
+    width:64px;
+    height:48px;
+  }
+  .browser-test .shot{
+    height:86px;
+  }
+  .browser-page-head{
+    gap:15px;
+  }
+  .browser-page-icon{
+    width:82px;
+    height:64px;
+  }
+}
+
+@media (max-width:520px){
+  .browser-mark{
+    align-items:center;
+  }
+  .browser-mark .browser-pictogram{
+    width:58px;
+    height:44px;
+  }
+  .browser-project h2{
+    font-size:23px;
+    line-height:1.02;
+  }
+  .browser-test .shot{
+    height:76px;
+  }
+  .browser-page-head{
+    align-items:flex-start;
+  }
+  .browser-page-icon{
+    width:68px;
+    height:52px;
+    margin-top:4px;
+  }
+  .browser-page-head h1{
+    font-size:31px;
+  }
+}
+
+
+/* =====================================================
+   PLATFORM PICTOGRAM WEBP COMPATIBILITY BASE
+   Original MultiEra Labs Windows/Amiga artwork.
+   ===================================================== */
+.platform-windows-render,
+.platform-amiga-render{
+  max-height:82px;
+  max-width:94%;
+  width:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 9px 10px rgba(0,0,0,.34));
+}
+@media (max-width:800px){
+  .platform-windows-render,
+  .platform-amiga-render{max-height:94px}
+}
+
+
+/* =====================================================
+   v0.9 — PLATFORM NAVIGATION + PICTOGRAM POLISH
+   ===================================================== */
+.tile-link{display:block;color:inherit;text-decoration:none}
+.tile-link:hover{color:inherit}
+a.content-card{display:block;color:inherit;text-decoration:none}
+a.content-card:hover{color:inherit;border-color:#24779a}
+.content-card ul{margin:10px 0 0;padding-left:18px;color:#d1e0e6;line-height:1.55}
+.content-card li{margin:4px 0}
+.eyebrow{color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:8px;display:block}
+.note{font-size:13px;color:#9bb6c3}
+.platform-windows-render{max-height:96px;max-width:96%}
+.platform-amiga-render{max-height:96px;max-width:96%}
+.platform-atari-render{max-height:98px;max-width:97%;width:auto;object-fit:contain;filter:drop-shadow(0 9px 10px rgba(0,0,0,.34))}
+@media (max-width:800px){
+  .platform-windows-render,.platform-amiga-render,.platform-atari-render{max-height:106px}
+}
+
+
+/* =====================================================
+   v0.10 — PLATFORM CONTENT PASS
+   ===================================================== */
+.platform-atari-render{
+  max-height:98px;
+  max-width:98%;
+}
+.platform-program-card{position:relative}
+.platform-program-card .status{display:inline-block;margin:8px 0 10px}
+.platform-program-card .cta{margin-top:10px}
+.platform-meta{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 0}
+.platform-meta span{border:1px solid #28576b;border-radius:999px;padding:5px 9px;font-size:11px;color:#cfe0e7;background:#071923}
+.platform-link-list{margin:8px 0 0;padding-left:19px;color:#d1e0e6;line-height:1.55}
+.platform-link-list li{margin:5px 0}
+.platform-note{color:#9eb6c2;font-size:13px}
+
+
+/* =====================================================
+   v0.11 — ATARI CACHE-SAFE SIZE FIX
+   New filename prevents Safari/NAS from reusing the v0.9 image.
+   ===================================================== */
+.platform-atari-render{
+  max-height:108px;
+  max-width:104%;
+  width:auto;
+  transform:translateY(-2px);
+}
+@media (max-width:800px){
+  .platform-atari-render{max-height:116px;max-width:108%;}
+}
+
+
+/* =====================================================
+   v0.12 — AMIGA / ATARI CONTENT PASS
+   All platform pages retain the shared page-hero flow.
+   No forced scroll reset: sticky header behavior remains native.
+   ===================================================== */
+
+
+/* =====================================================
+   v0.12.1 — PLATFORM PAGE TOP-OF-PAGE HOTFIX
+   Keep the sticky header. JS below prevents Safari from carrying a
+   previous page's scroll offset into a newly opened platform page.
+   Scroll padding also keeps in-page navigation clear of the header.
+   ===================================================== */
+html{scroll-padding-top:150px}
+@media (max-width:800px){html{scroll-padding-top:96px}}
+
+
+/* =====================================================
+   v0.13 — CURATED RESOURCES + DOWNLOAD HUB
+   ===================================================== */
+.resource-list{list-style:none;margin:10px 0 0;padding:0}
+.resource-list li{border-top:1px solid rgba(64,119,143,.34);padding:10px 0}
+.resource-list li:first-child{border-top:0;padding-top:2px}
+.resource-list a{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;color:#e7f0f4;text-decoration:none}
+.resource-list a:hover strong{color:var(--orange)}
+.resource-list strong{display:block;font-size:14px;line-height:1.25;transition:color .15s ease}
+.resource-list small{display:block;color:#9eb6c2;font-size:12px;line-height:1.4;margin-top:3px;font-weight:400}
+.external-badge{flex:0 0 auto;border:1px solid #7c5c24;border-radius:999px;padding:3px 7px;color:var(--orange);font-size:9px;font-weight:800;letter-spacing:.08em;margin-top:1px}
+.resource-checked{color:#7897a6;font-size:11px;margin-top:10px}
+.download-program-card .platform-meta{margin-bottom:10px}
+.download-program-card .status{display:inline-block;margin-top:10px}
+.download-platform-card h2{margin-bottom:7px}
+.download-platform-card .platform-note{margin-bottom:0}
+@media (max-width:720px){
+  .resource-list a{gap:8px}
+  .external-badge{font-size:8px;padding:3px 6px}
+}
+
+
+/* =====================================================
+   v0.13.1 — SAFARI PLATFORM HERO / BFCache HOTFIX
+   Platform-page scroll reset is implemented in script.js.
+   Existing sticky header and page layout remain unchanged.
+   ===================================================== */
+
+
+/* =====================================================
+   v0.14 — PROGRAM DETAIL PAGES + RELEASE STRUCTURE
+   ===================================================== */
+.program-detail .page-hero{scroll-margin-top:150px}
+.program-intro .detail-copy>.status{display:inline-block;margin-bottom:12px}
+.program-related .content-card{display:block;text-decoration:none;color:inherit}
+.program-related .content-card:hover{border-color:#24779a;color:inherit}
+.release-card{position:relative}
+.release-availability{display:inline-block;margin:10px 0 0 8px;border:1px solid #6c8796;background:#233947;border-radius:4px;padding:4px 7px;color:#d9e5ea;font-size:9px;font-weight:800;letter-spacing:.06em;vertical-align:middle}
+.release-availability.ready{border-color:#2a9a6b;background:#104c39;color:#dcfff0}
+.probe-console{min-height:230px;display:grid;grid-template-columns:repeat(2,110px);grid-auto-rows:58px;gap:10px;align-content:center;justify-content:center;border:1px solid #24566b;border-radius:12px;background:radial-gradient(circle at 50% 40%,rgba(42,130,170,.13),transparent 64%),#04131d;box-shadow:inset 0 0 40px rgba(0,0,0,.35)}
+.probe-console div{display:flex;align-items:center;justify-content:center;border:1px solid #315d70;border-radius:7px;background:#0a2635;color:var(--orange);font-weight:800;letter-spacing:.08em}
+.probe-console code{grid-column:1/-1;text-align:center;padding:9px 10px;border:1px solid #315d70;border-radius:6px;color:#cfe7f0;background:#02090e;font-size:14px}
+@media (max-width:800px){
+  .program-detail .page-hero{scroll-margin-top:96px}
+  .probe-console{min-height:190px;grid-template-columns:repeat(2,90px);grid-auto-rows:48px}
+  .release-availability{margin-left:5px}
+}

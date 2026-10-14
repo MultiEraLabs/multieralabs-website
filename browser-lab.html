@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Browser Lab — MultiEra Labs</title>
+<meta name="description" content="MultiEra Labs — Software across generations.">
+<link rel="stylesheet" href="styles.css?v=0.14">
+</head>
+<body>
+<header class="topbar">
+  <div class="container brand-row">
+    <a class="brand" href="index.html" aria-label="MultiEra Labs">
+      <span class="logo-orbit"><i></i><b></b></span>
+      <span class="brand-copy"><strong>MultiEra <span>Labs</span></strong><small>Software across generations.</small></span>
+    </a>
+    <div></div>
+    <div class="lang-search">
+      <div class="lang">
+        <a class="active" href="browser-lab.html">DE</a>
+        &nbsp;|&nbsp;
+        <a class="" href="browser-lab-en.html">EN</a>
+      </div>
+      <div class="search">
+        <input id="site-search" type="search" placeholder="Suche ..." aria-label="Suche ...">
+        <button id="search-button" aria-label="Search">⌕</button>
+      </div>
+        <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+  </div>
+  </div>
+  <nav class="nav"><div class="container nav-inner">
+    <a href="index.html"><span class="ico">⌂</span>Home</a>
+<a href="projects.html"><span class="ico">⚙</span>Projekte</a>
+<a href="platforms.html"><span class="ico">▱</span>Plattformen</a>
+<a href="hardware-lab.html"><span class="ico">▣</span>Hardware Lab</a>
+<a class="active" href="browser-lab.html"><span class="ico">◎</span>Browser Lab</a>
+<a href="downloads.html"><span class="ico">⇩</span>Downloads</a>
+<a href="roadmap.html"><span class="ico">☷</span>Roadmap</a>
+<a href="about.html"><span class="ico">ⓘ</span>Über uns</a>
+  </div></nav>
+</header>
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-kicker">COMPATIBILITY IS MEASURED</div>
+    <h1>Browser Lab</h1>
+    <p>Tests vom C64/Contiki bis Windows XP – auf Emulatoren und ausgewählter echter Hardware.</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="table-card">
+    <table class="modern-table">
+      <thead><tr><th>System</th><th>Browser</th><th>Ergebnis / Umfang</th><th>Status</th></tr></thead>
+      <tbody>
+<tr><td><strong>Windows 98 SE</strong></td><td>Netscape Communicator 4.x</td><td>HTML / ISO-8859-1 / GIF / JPEG / PNG / TXT / ZIP</td><td><span class="status">PASS</span></td></tr>
+
+<tr><td><strong>Mac OS 9.1</strong></td><td>Netscape Communicator 4.8</td><td>HTML / tables / ISO-8859-1 / images / downloads</td><td><span class="status">PASS</span></td></tr>
+
+<tr><td><strong>Mac OS 8.1 / 68k</strong></td><td>Netscape Navigator 3.01</td><td>HTML / GIF / JPEG / TXT / ZIP; PNG unsupported</td><td><span class="status">PASS</span></td></tr>
+
+<tr><td><strong>System 7.6 / 68k</strong></td><td>Netscape Navigator 2</td><td>HTML / tables / GIF / JPEG / TXT / ZIP</td><td><span class="status">PASS</span></td></tr>
+
+<tr><td><strong>Windows 3.11</strong></td><td>Internet Explorer 5</td><td>HTML / ISO / GIF / JPEG / TXT / ZIP</td><td><span class="status">PASS</span></td></tr>
+
+<tr><td><strong>MS-DOS 6.22</strong></td><td>Arachne</td><td>HTML / tables / images / TXT / ZIP</td><td><span class="status">PASS</span></td></tr>
+
+<tr><td><strong>Amiga Workbench 3.1</strong></td><td>IBrowse 2.4</td><td>HTML / ISO / GIF / JPEG / PNG / TXT / ZIP</td><td><span class="status">PASS</span></td></tr>
+
+<tr><td><strong>C64 / Contiki</strong></td><td>Contiki Web Browser</td><td>8-Bit Edition / 24-char layout / links / HTML text</td><td><span class="status">PASS</span></td></tr>
+</tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>MultiEra Labs</strong><br>Software across generations.</div>
+    <div>Modern Edition v0.14 · 07-10-2026</div>
+    <div><a href="/legacy/">Legacy</a> &nbsp;·&nbsp; <a href="/8bit/de/home.html">8-Bit</a></div>
+  </div>
+</footer>
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-card">
+    <div class="modal-head"><h2 id="modal-title">Hardware</h2><button class="close" type="button">Schließen</button></div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+<script src="script.js?v=0.14"></script>
+</body></html>

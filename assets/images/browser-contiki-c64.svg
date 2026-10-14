@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img">
+<rect width="320" height="180" fill="#3f51a5"/>
+<rect x="12" y="10" width="296" height="160" fill="#6f7bd5" stroke="#9da6ef" stroke-width="4"/>
+<rect x="18" y="16" width="284" height="18" fill="#394897"/>
+<text x="24" y="29" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">CONTIKI WEB BROWSER</text>
+<rect x="19" y="38" width="282" height="18" fill="#aeb5ef"/>
+<text x="24" y="51" font-family="monospace" font-size="9" fill="#27336f">GO BACK HOME RELOAD</text>
+<rect x="19" y="60" width="282" height="90" fill="#f2f0d0"/>
+<text x="26" y="77" font-family="monospace" font-size="10" font-weight="bold" fill="#203a8c">MULTIERA LABS</text>
+<text x="26" y="93" font-family="monospace" font-size="8" fill="#111">SOFTWARE ACROSS</text>
+<text x="26" y="104" font-family="monospace" font-size="8" fill="#111">GENERATIONS.</text>
+<text x="26" y="122" font-family="monospace" font-size="8" fill="#203a8c">PROJECTS  SYSTEMS</text>
+<text x="26" y="134" font-family="monospace" font-size="8" fill="#203a8c">DOWNLOADS BROWSER</text>
+<text x="24" y="163" font-family="monospace" font-size="8" fill="#fff">C64 / 24 CHAR EDITION · PASS</text>
+</svg>
