@@ -13,3 +13,7 @@
 /downloads/mhprobe/MHP11EN.IMG
   Content-Type: application/octet-stream
   Content-Disposition: attachment; filename="MHP11EN.IMG"
+
+/downloads/mhprobe/MHPROBE-1.1-DOS-RELEASE-DE-EN.zip
+  Content-Type: application/zip
+  Content-Disposition: attachment; filename="MHPROBE-1.1-DOS-RELEASE-DE-EN.zip"

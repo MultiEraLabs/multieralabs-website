@@ -17,3 +17,8 @@ See README.TXT and LICENSE.TXT inside the corresponding ZIP.
 CPU speed is read from BIOS/SMBIOS at boot, not measured live.
 MDA/CGA/EGA real-hardware behavior is not yet fully tested.
 See MHPROBE-1.1-SHA256.TXT for download checksums.
+
+ALL-IN-ONE ZIP: MHPROBE-1.1-DOS-RELEASE-DE-EN.zip
+Contains both language-specific program ZIPs and both non-bootable IMG files.
+SHA-256: 54cf09c5fa79b1f666be7f34625f1225a038b9c7a2ba3769c1c29cc44a5edb39
+This is the easiest initial public download; individual files may be offered too.
