@@ -17,3 +17,11 @@
 /downloads/mhprobe/MHPROBE-1.1-DOS-RELEASE-DE-EN.zip
   Content-Type: application/zip
   Content-Disposition: attachment; filename="MHPROBE-1.1-DOS-RELEASE-DE-EN.zip"
+
+/downloads/mhprobe/MHPROBE-1.0-DOS.zip
+  Content-Type: application/zip
+  Content-Disposition: attachment; filename="MHPROBE-1.0-DOS.zip"
+
+/downloads/mhprobe/MHPROBE-1.0-DOS.IMG
+  Content-Type: application/octet-stream
+  Content-Disposition: attachment; filename="MHPROBE-1.0-DOS.IMG"
