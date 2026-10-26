@@ -1058,3 +1058,10 @@ html{scroll-padding-top:150px}
 .lab-build-visual strong{color:var(--orange);font-size:26px;line-height:1.1;letter-spacing:.05em}
 .lab-build-frequency{color:#f1f7fa;font-size:22px;font-weight:700}
 
+/* Shared MHProbe download actions */
+.download-action-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0}
+.download-action-row .cta{align-items:center;justify-content:center;text-align:center;line-height:1.4;min-height:42px;box-sizing:border-box}
+.download-action-row .cta:first-child:not(.cta--image){background:var(--orange);color:#061a24}
+.download-action-row .cta--image{background:#102c3c;border-color:#91acba;color:#e6f2f7;box-shadow:none}
+.download-action-row .cta--image:hover{background:#1a3b4c}
+@media(max-width:640px){.download-action-row .cta{max-width:100%}}
