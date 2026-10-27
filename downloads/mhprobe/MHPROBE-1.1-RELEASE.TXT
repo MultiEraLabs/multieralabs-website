@@ -1,0 +1,24 @@
+MULTIERA HARDWARE PROBE 1.1 / DOS EDITION
+DE + EN Release / 2026-10-26
+
+The release consists of two DOS program ZIP archives and two
+1.44 MB FAT12 NON-BOOTABLE program images, one per language.
+DOS 386+, 16-bit, 80x25 text. Source code is NOT included
+in the public packages. Hardware analysis is read-only;
+report export writes a TXT file when requested.
+
+DE ZIP: MHPROBE-1.1-DOS-DE.zip
+EN ZIP: MHPROBE-1.1-DOS-EN.zip
+DE IMG: MHP11DE.IMG
+EN IMG: MHP11EN.IMG
+
+The DAT hardware databases must stay alongside MHPROBE.EXE.
+See README.TXT and LICENSE.TXT inside the corresponding ZIP.
+CPU speed is read from BIOS/SMBIOS at boot, not measured live.
+MDA/CGA/EGA real-hardware behavior is not yet fully tested.
+See MHPROBE-1.1-SHA256.TXT for download checksums.
+
+ALL-IN-ONE ZIP: MHPROBE-1.1-DOS-RELEASE-DE-EN.zip
+Contains both language-specific program ZIPs and both non-bootable IMG files.
+SHA-256: 54cf09c5fa79b1f666be7f34625f1225a038b9c7a2ba3769c1c29cc44a5edb39
+This is the easiest initial public download; individual files may be offered too.
