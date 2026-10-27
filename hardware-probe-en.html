@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MultiEra Hardware Probe — MultiEra Labs</title>
 <meta name="description" content="MultiEra Hardware Probe — read-only diagnostics and hardware inventory for DOS and classic systems.">
-<link rel="stylesheet" href="styles.css?v=0.14">
+<link rel="stylesheet" href="styles.css?v=0.14.1">
 </head>
 <body class="program-detail">
 <header class="topbar">
@@ -49,6 +49,43 @@
   <article class="content-card"><h2>CPU and memory</h2><ul class="clean-list"><li>386/486 detection and CPUID where supported</li><li>FPU identification</li><li>conventional memory, XMS and HMA</li><li>BIOS signatures and DMI/SMBIOS if available</li></ul></article>
   <article class="content-card"><h2>Buses and interfaces</h2><ul class="clean-list"><li>PCI BIOS, device IDs, classes and IRQs</li><li>ISA / PnP BIOS resources where supported</li><li>IBM PS/2 Micro Channel / MCA and POS data</li><li>COM, LPT and classic PC hardware</li></ul></article>
   <article class="content-card"><h2>Diagnostics and databases</h2><ul class="clean-list"><li>warnings and diagnostic notices</li><li>MCA, PCI, CPU, BIOS and PnP databases</li><li>paged on-screen output</li><li>complete <code>REPORT.TXT</code> report</li></ul></article>
+</section>
+<section class="container band mhprobe-gallery-band"><div class="band-title"><span>▱ &nbsp;PROGRAM SCREENSHOTS</span></div></section>
+<section class="container mhprobe-screenshots" aria-labelledby="mhprobe-screenshots-heading">
+  <div class="mhprobe-screenshots-intro"><h2 id="mhprobe-screenshots-heading">MHProbe DOS 1.1 – Screenshots</h2>
+  <p>Original screenshots of the German MHProbe DOS 1.1 edition running on real hardware. Captured with our own DOS screenshot tool, which is still in development. Click an image to open the full resolution.</p></div>
+  <div class="mhprobe-screenshot-grid">
+<figure class="mhprobe-shot mhprobe-shot--featured">
+  <a href="/assets/images/mhprobe/mhprobe-dos11-mainmenu-de.png" target="_blank" rel="noopener noreferrer" aria-label="Open screenshot in full resolution: Main menu">
+    <img src="/assets/images/mhprobe/mhprobe-dos11-mainmenu-de.png" width="1440" height="800" loading="eager" decoding="async" alt="MHProbe DOS 1.1 main menu with MultiEra Dark theme">
+  </a>
+  <figcaption><strong>Main menu</strong><span>MHProbe DOS 1.1 main menu in the MultiEra Dark theme, featuring keyboard navigation.</span></figcaption>
+</figure>
+<figure class="mhprobe-shot">
+  <a href="/assets/images/mhprobe/mhprobe-dos11-cpu-de.png" target="_blank" rel="noopener noreferrer" aria-label="Open screenshot in full resolution: CPU and FPU">
+    <img src="/assets/images/mhprobe/mhprobe-dos11-cpu-de.png" width="1440" height="800" loading="lazy" decoding="async" alt="MHProbe CPU information showing a 500 MHz Pentium III">
+  </a>
+  <figcaption><strong>CPU and FPU</strong><span>Intel Pentium III processor details at 500 MHz, including CPUID and FPU detection.</span></figcaption>
+</figure>
+<figure class="mhprobe-shot">
+  <a href="/assets/images/mhprobe/mhprobe-dos11-memory-de.png" target="_blank" rel="noopener noreferrer" aria-label="Open screenshot in full resolution: Memory">
+    <img src="/assets/images/mhprobe/mhprobe-dos11-memory-de.png" width="1440" height="800" loading="lazy" decoding="async" alt="MHProbe conventional memory and XMS overview">
+  </a>
+  <figcaption><strong>Memory</strong><span>Conventional DOS memory, XMS manager, HMA support and available XMS memory.</span></figcaption>
+</figure>
+<figure class="mhprobe-shot">
+  <a href="/assets/images/mhprobe/mhprobe-dos11-bios-dmi-de.png" target="_blank" rel="noopener noreferrer" aria-label="Open screenshot in full resolution: System and BIOS">
+    <img src="/assets/images/mhprobe/mhprobe-dos11-bios-dmi-de.png" width="1440" height="800" loading="lazy" decoding="async" alt="MHProbe DOS 6.22 and Award BIOS information">
+  </a>
+  <figcaption><strong>System and BIOS</strong><span>DOS version and Award BIOS identification, with the SMBIOS/DMI section beginning below.</span></figcaption>
+</figure>
+<figure class="mhprobe-shot">
+  <a href="/assets/images/mhprobe/mhprobe-dos11-pci-de.png" target="_blank" rel="noopener noreferrer" aria-label="Open screenshot in full resolution: PCI devices">
+    <img src="/assets/images/mhprobe/mhprobe-dos11-pci-de.png" width="1440" height="800" loading="lazy" decoding="async" alt="MHProbe PCI detection of Creative SB Live and 3Com network card">
+  </a>
+  <figcaption><strong>PCI devices</strong><span>Detected PCI hardware on the test PC, including Creative SB Live! Gameport and a 3Com network card.</span></figcaption>
+</figure>
+  </div>
 </section>
 <section class="container page-grid two">
   <article class="content-card"><h2>Install and run</h2><p>Once a new DOS package is released, <code>MHPROBE.EXE</code> and its <code>.DAT</code> files will reside in the same directory. Start using <code>MHPROBE</code>; <strong>F9</strong> opens report saving; <strong>F2</strong> changes the theme.</p></article>
