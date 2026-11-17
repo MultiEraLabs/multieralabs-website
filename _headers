@@ -25,3 +25,8 @@
 /downloads/mhprobe/MHPROBE-1.0-DOS.IMG
   Content-Type: application/octet-stream
   Content-Disposition: attachment; filename="MHPROBE-1.0-DOS.IMG"
+
+/updates/g15control/stable.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
